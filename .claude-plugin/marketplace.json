@@ -1,0 +1,14 @@
+{
+  "name": "equipo-montes",
+  "description": "Skills comunes del equipo docente de AI Engineering (Soraya y Hugo)",
+  "owner": {
+    "name": "Equipo Montes"
+  },
+  "plugins": [
+    {
+      "name": "aie-equipo",
+      "source": "./plugins/aie-equipo",
+      "description": "Normas y skills comunes para preparar, publicar y dar seguimiento a los sprints"
+    }
+  ]
+}
