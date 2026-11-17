@@ -21,6 +21,6 @@ Orden de implementación propuesto: 001, 002 y 003 en paralelo; después 005 y 0
 | 001 | Estructura del repo y del plugin | En curso |
 | 002 | Mapa de recursos y conectores (Trello, Slack, Notion, Calendar) | Aprobada |
 | 003 | Skills iniciales: preparar sprint, liberar sprint y actas | Aprobada |
-| 004 | Recordatorios de la semana tipo por rol | Aprobada |
+| 004 | Rutinas y automatizaciones: recordatorios por rol, Trello y guardas | En curso |
 | 005 | Archivo de mensajes de Slack | En curso |
 | 006 | Estandarización de estilo y formato | Tema futuro |
