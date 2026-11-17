@@ -47,35 +47,36 @@ Propón archivar, sin archivar nada:
 - si la persona es Hugo y la tarjeta `[Trello] ¿Archivar N tarjetas de Done?` de la maestra sigue sin su OK, una línea con el número y el enlace;
 - las pendientes que parezcan caducadas: de MAY26, de sprints ya liberados o sin movimiento en 30 días. Para estas, el nombre y el motivo.
 
-## 5. Recursos que ya existen
+## 5. Skills y recursos que ya existen
 
-Para cada tarea de «Hoy» y «Vence pronto» que figure en esta tabla, añade al final de su línea el recurso, así: `→ skill preparar-sprint`.
+Mira las tareas de «Hoy» y «Vence pronto» y busca cada una en esta tabla. Los recursos que salgan, sin repetir, van todos juntos en la **última línea** del mensaje (apartado 6), no al lado de cada tarea.
 
 | Tarea (n.º en `roles-y-funciones.md`) | Recurso | Para quién |
 | --- | --- | --- |
-| Revisar el sprint, preparar la teórica, el caso práctico o el PDF de enlaces (7, 8, 10, 11) | skill `preparar-sprint` | Quien imparte el sprint |
-| Liberar el sprint, copia al repo de alumnos, campus (14, 15) | skill `liberar-sprint` | TA |
-| Mensaje de apertura del sprint (16) | plantilla `plantillas/mensajes/apertura-sprint.md` | TA |
-| Mensaje de cierre de semana (17) | plantilla `plantillas/mensajes/cierre-semana.md` | TA |
+| Revisar el sprint, preparar la teórica, el caso práctico o el PDF de enlaces (7, 8, 10, 11) | `preparar-sprint` | Quien imparte el sprint |
+| Liberar el sprint, copia al repo de alumnos, campus (14, 15) | `liberar-sprint` | TA |
+| Mensaje de apertura del sprint (16) | plantilla `apertura-sprint` (`plantillas/mensajes/`) | TA |
+| Mensaje de cierre de semana (17) | plantilla `cierre-semana` (`plantillas/mensajes/`) | TA |
 | Mensajes de aviso de clases, MC y talleres (18) | plantillas de `plantillas/mensajes/` | TA |
-| Acta de una sesión (20) | skill `acta-sesion` | TA |
-| Cualquier texto de cara al alumno | skill `normas-aie` | Los dos |
-| Kahoot de una LR (9) | skill personal `kahoot` | Solo Hugo |
-| Subir y comprobar una grabación (19) | skill personal `subir-video` | Solo Hugo |
+| Acta de una sesión (20) | `acta-sesion` | TA |
+| Cualquier texto de cara al alumno | `normas-aie` | Los dos |
+| Kahoot de una LR (9) | `kahoot` (skill personal) | Solo Hugo |
+| Subir y comprobar una grabación (19) | `subir-video` (skill personal) | Solo Hugo |
 
 - Solo ofrece lo que está en la tabla. Si una tarea no tiene recurso, no digas nada: no inventes skills.
 - Las skills personales se ofrecen solo a su dueño. A la otra persona no se le nombran.
-- Si un recurso no existe en el repo o en la cuenta de la persona, no lo ofrezcas y dilo en una línea al final.
+- Si un recurso no existe en el repo o en la cuenta de la persona, no lo ofrezcas.
 
 ## 6. Formato del aviso
 
-Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo**, sin contar el título. Lo demás, como «y N más», con el enlace al tablero.
+Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo**, sin contar el título ni la última línea. Lo demás, como «y N más», con el enlace al tablero.
 
 - Título: `Diaria · {día} {fecha} · {LI | TA} · Sprint {N}`.
 - Tres bloques, en este orden:
-  1. **Hoy**: las clases y tareas del día con su hora y, si hay, el recurso del apartado 5. Aquí va también lo del lunes.
+  1. **Hoy**: las clases y tareas del día con su hora. Aquí va también lo del lunes.
   2. **Vence pronto**: tarjetas vencidas o que vencen en los próximos dos días, con fecha y enlace. Si hay tarjetas sin fecha, una sola línea con el número.
   3. **Decide tú**: lo que espera una decisión de la persona. Las PRs por revisar, la tarjeta de archivar Done sin OK, las propuestas de archivar tarjetas caducadas y los avisos de la maestra (un fallo o un comentario de aviso). Si no hay nada, el bloque no sale.
 - Viñetas de una línea, con hora y enlace.
 - Si la maestra no ha dejado su comentario un día de trabajo, es la primera línea de «Decide tú».
+- **Última línea, sola:** `Skills recomendadas: preparar-sprint, kahoot`, con los recursos del apartado 5 que correspondan a lo de hoy, máximo cuatro. Si no hay ninguno, la línea no sale.
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.
