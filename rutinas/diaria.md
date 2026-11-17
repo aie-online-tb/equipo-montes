@@ -45,9 +45,29 @@ Propón archivar, sin archivar nada:
 - si la persona es Hugo y la tarjeta `[Trello] ¿Archivar N tarjetas de Done?` de la maestra sigue sin su OK, una línea con el número y el enlace;
 - las pendientes que parezcan caducadas: de MAY26, de sprints ya liberados o sin movimiento en 30 días. Para estas, el nombre y el motivo.
 
-## 5. Formato del aviso
+## 5. Recursos que ya existen
+
+Para cada tarea de «Hoy», «Próximos dos días» y «Trello» que figure en esta tabla, añade al final de su línea el recurso, así: `→ skill preparar-sprint`.
+
+| Tarea (n.º en `roles-y-funciones.md`) | Recurso | Para quién |
+| --- | --- | --- |
+| Revisar el sprint, preparar la teórica, el caso práctico o el PDF de enlaces (7, 8, 10, 11) | skill `preparar-sprint` | Quien imparte el sprint |
+| Liberar el sprint, copia al repo de alumnos, campus (14, 15) | skill `liberar-sprint` | TA |
+| Mensaje de apertura del sprint (16) | plantilla `plantillas/mensajes/apertura-sprint.md` | TA |
+| Mensaje de cierre de semana (17) | plantilla `plantillas/mensajes/cierre-semana.md` | TA |
+| Mensajes de aviso de clases, MC y talleres (18) | plantillas de `plantillas/mensajes/` | TA |
+| Acta de una sesión (20) | skill `acta-sesion` | TA |
+| Cualquier texto de cara al alumno | skill `normas-aie` | Los dos |
+| Kahoot de una LR (9) | skill personal `kahoot` | Solo Hugo |
+| Subir y comprobar una grabación (19) | skill personal `subir-video` | Solo Hugo |
+
+- Solo ofrece lo que está en la tabla. Si una tarea no tiene recurso, no digas nada: no inventes skills.
+- Las skills personales se ofrecen solo a su dueño. A la otra persona no se le nombran.
+- Si un recurso no existe en el repo o en la cuenta de la persona, no lo ofrezcas y dilo en una línea al final.
+
+## 6. Formato del aviso
 
 - Título: `Diaria · {día} {fecha} · {LI | TA} · Sprint {N}`.
-- Bloques, en este orden: «PRs por revisar» (solo si hay alguna), «Hoy», «Próximos dos días» y «Trello». Viñetas cortas, con hora y enlace.
+- Bloques, en este orden: «PRs por revisar» (solo si hay alguna), «Hoy», «Próximos dos días» y «Trello». Viñetas cortas, con hora y enlace, y el recurso del apartado 5 al final de la línea cuando lo haya.
 - Que quepa en una pantalla de móvil. Si hay más, lo más urgente primero y el resto como «y N más».
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.
