@@ -3,7 +3,7 @@
 - [x] Hoja de seguimiento de OCT26 en el mapa (17/11/2026).
 - [x] Canales de Slack del espacio de equipo (17/11/2026).
 - [x] Canales de Slack de alumnos y de claustro (17/11/2026, captura de Hugo).
-- [ ] El canal de los tres con Álex Cárabe.
+- [x] Canal de coordinación con Álex Cárabe: `oct26-claustro-aie` (17/11/2026).
 - [ ] Carpeta de actas en Drive.
 - [ ] Deck: URL y cómo se revisa un sprint.
 - [ ] Curso de OCT26 en el campus: id del curso.
