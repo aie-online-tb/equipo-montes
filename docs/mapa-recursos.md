@@ -58,6 +58,25 @@ Cada uno conecta un solo espacio de Slack a su Claude. El de alumnos no es visib
 | YouTube | Lista «Grabaciones AI Engineering 10-26», vídeos en Oculto |
 | Automatización de grabaciones | Corre en el equipo de Hugo; el TA de la semana comprueba el resultado |
 
+## Conectores
+
+Cada uno activa los conectores en su cuenta de claude.ai (Ajustes → Conectores), con su propio usuario. Así funcionan en la app de chat y en Claude Code a la vez: Claude Code usa los conectores de la cuenta con la que se ha iniciado sesión. El plugin no declara ningún conector por ahora, para no duplicarlos ni meter direcciones sin comprobar.
+
+| Herramienta | Conector | Para qué lo usa Claude | Hugo | Soraya |
+| --- | --- | --- | --- | --- |
+| Trello | Trello | Leer el tablero y las tarjetas de cada uno | Conectado | Por comprobar |
+| Notion | Notion | Actas, alumnos, calendario y fechas de entrega | Conectado | Por comprobar |
+| Slack | Slack | Leer canales y preparar borradores de mensajes | Conectado al espacio de equipo | Por comprobar |
+| Google Calendar | Google Calendar | Clases, banners de sprint y quién es LI | Conectado | Por comprobar |
+| Google Sheets y Drive | Google Drive y Google Sheets | Hoja de seguimiento y calendario del curso | Conectado | Por comprobar |
+| GitHub | GitHub | Repos del bootcamp y este repo | Conectado | Por comprobar |
+| Zoom | Zoom | Grabaciones y transcripciones | Conectado | Opcional |
+
+Reglas:
+- Leer, libre. Escribir en Trello, Notion, Slack o el calendario, solo con el OK de una persona.
+- Slack solo admite un espacio por cuenta. Cada uno decide cuál conecta: el de equipo (The Bridge) o el de alumnos (The Bridge Online), donde están el canal de alumnos y `oct26-claustro-aie`.
+- Los conectores dependen de la cuenta, no del repo: si uno cambia, se apunta aquí.
+
 ## Por completar
 
 - Carpeta de Drive de actas.

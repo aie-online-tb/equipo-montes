@@ -7,5 +7,7 @@
 - [ ] Carpeta de actas en Drive.
 - [ ] Deck: URL y cómo se revisa un sprint.
 - [ ] Curso de OCT26 en el campus: id del curso.
-- [ ] Tabla de conectores por herramienta: dónde se conecta y si está comprobado.
-- [ ] Comprobar qué conectores se pueden declarar en el plugin.
+- [x] Tabla de conectores por herramienta (17/11/2026). Decisión: se activan en la cuenta de claude.ai de cada uno y no se declaran en el plugin.
+- [x] Comprobado: el plugin puede declarar servidores MCP remotos con OAuth, pero no hace falta mientras existan los conectores de claude.ai. Queda como opción para herramientas sin conector.
+- [ ] Soraya activa sus conectores y se marca en la tabla.
+- [ ] Decidir qué espacio de Slack conecta cada uno.
