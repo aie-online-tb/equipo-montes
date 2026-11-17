@@ -10,7 +10,7 @@ Conectores: GitHub (este repo), Google Calendar, Trello y Google Sheets. Trello 
 
 1. Fecha de hoy en Europe/Madrid.
 2. Lee `docs/li-por-modulo.md`, `docs/semana-tipo.md` y `docs/roles-y-funciones.md` de este repo, en `main`.
-3. Mira en el calendario OCT26 el banner de sprint de hoy. La semana va de miércoles a martes: N es el sprint que se liberó el miércoles de esta semana.
+3. Saca N del calendario OCT26. Los banners de sprint van de jueves a miércoles, pero nuestra semana va de miércoles a martes. Por eso N no es el banner de hoy, sino el banner que contiene el jueves de esta semana: mañana si hoy es miércoles, o el jueves pasado en los demás días. Ejemplo: el miércoles 18/11/2026 el banner de hoy es S04, pero N es S05.
 4. Averigua el rol de la persona esta semana (LI o TA) y si va a impartir N+1, porque las funciones que siguen al sprint se preparan una semana antes.
 5. Si hoy no hay clases (festivo, vacaciones o Project Break), dilo en una línea y da solo lo de los apartados 3 y 4.
 
@@ -29,7 +29,7 @@ Según el día, añade:
 
 ## 3. Tarjetas de Trello
 
-Del tablero `iYb6W4J7`, las tarjetas abiertas asignadas a la persona:
+Del tablero `iYb6W4J7`, las tarjetas pendientes asignadas a la persona. Pendiente quiere decir no archivada y fuera de las listas «Done 🎉» e «Info»:
 - vencidas;
 - que vencen hoy o en los próximos dos días;
 - con un comentario de hoy de la rutina maestra (un borrador o un aviso), en una línea;
@@ -37,7 +37,9 @@ Del tablero `iYb6W4J7`, las tarjetas abiertas asignadas a la persona:
 
 Si hoy es día de trabajo de la maestra y no hay ningún comentario suyo, dilo: puede haber fallado.
 
-Propón archivar las que parezcan terminadas o caducadas (de MAY26, de sprints ya liberados o sin movimiento en 30 días), con el motivo. Solo proponer: no se archiva nada.
+Propón archivar, sin archivar nada:
+- las tarjetas de la persona en «Done 🎉» con más de 14 días sin movimiento, solo el número;
+- las pendientes que parezcan caducadas: de MAY26, de sprints ya liberados o sin movimiento en 30 días. Para estas, el nombre y el motivo.
 
 ## 4. Formato del aviso
 
