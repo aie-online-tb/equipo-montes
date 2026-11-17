@@ -10,7 +10,6 @@ Comprueba mis conectores para el sistema del equipo Montes. Solo lectura: no cre
    - Trello: mi perfil (get_me) y el tablero iYb6W4J7. Dime con qué usuario estoy y si veo la lista «Current Sprint».
    - Google Calendar: los eventos de esta semana del calendario OCT26.
    - Google Sheets: el título de la hoja de seguimiento de OCT26, sin leer datos de alumnos.
-   - Notion: busca el espacio «The Bridge AIE».
    - Slack: busca el canal #equipo_docente_octubre-2026 y dime en qué espacio de trabajo estoy.
    - GitHub: si veo aie-online-tb/equipo-montes y aie-online-tb/bootcamp_AI_Engineering_10_26.
 3. Devuélveme una tabla: conector, OK o fallo, con qué cuenta y qué tengo que hacer si falla.

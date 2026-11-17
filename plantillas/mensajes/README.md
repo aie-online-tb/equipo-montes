@@ -23,5 +23,5 @@ Una plantilla por tipo de mensaje a los alumnos de OCT26, en el canal `ia_engine
 | Enlace de la sesión y del sprint en el campus | Curso de OCT26 en el campus |
 | Enlace al repo | `bootcamp_AI_Engineering_10_26`, rama `main` |
 | Contenido del sprint | `README.md` del sprint y su `01_Teoria/` |
-| Fechas de entrega | Calendario OCT26 y Notion |
+| Fechas de entrega | Calendario OCT26 y hoja de seguimiento |
 | Ponente de una Microcredencial UAM o masterclass externa | Calendario OCT26 y `docs/mapa-recursos.md` |

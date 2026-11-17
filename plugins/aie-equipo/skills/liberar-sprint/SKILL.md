@@ -28,7 +28,7 @@ En OCT26 el contenido no entra en una sola release semanal. Cada pieza es una co
 
 Pregunta qué pieza toca y haz solo los pasos de esa pieza: el 1 para soluciones, el 2 y el 3 para el sprint nuevo, y una copia directa para slides y añadidos.
 
-Cada copia son dos PRs seguidas: `feature/copy_from_material` → `develop` y `develop` → `main`. El título de la PR a `main` empieza por «release:» y dice qué entra, por ejemplo «release: Sprint 05» o «release: soluciones Sprint 04». Las mergea el TA.
+Cada copia son dos PRs seguidas: `feature/copy_from_material` → `develop` y `develop` → `main`. El título de la PR a `main` empieza por «release:» solo si abre un sprint, por ejemplo «release: Sprint 05»; si añade soluciones, slides o talleres, empieza por «feat:», por ejemplo «feat: soluciones Sprint 04». Cada pieza va en su propia PR. Las mergea el TA, y la que va a `main` en `equipo-montes` necesita la aprobación de la otra persona.
 
 ## Repos y ramas
 
@@ -64,7 +64,7 @@ En `workouts_AIE_permanente`, comprueba si está `Sprint_XX/02_Workout/` del spr
 
 Al terminar los pasos 1 a 3, enseña qué hay en stage en cada repo y **espera el OK** antes de hacer commit, push o abrir PR. Con el OK, el orden es:
 1. PR de `feature/copy_from_material` a `develop`.
-2. PR «release: …» de `develop` a `main`. Si es el sprint nuevo, se deja abierta hasta la hora de liberar del miércoles.
+2. PR de `develop` a `main`, «release: …» si es el sprint nuevo o «feat: …» si son soluciones o slides. Si es el sprint nuevo, se deja abierta hasta la hora de liberar del miércoles.
 
 ### Paso 4 · Miércoles: liberar
 
