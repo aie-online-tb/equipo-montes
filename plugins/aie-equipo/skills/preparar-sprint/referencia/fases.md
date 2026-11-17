@@ -22,6 +22,13 @@ Texto del prompt maestro v2 de Soraya. Único cambio, decidido por Hugo el 17/11
    - **Si no ha cambiado nada**, reutiliza la del sprint anterior y mantén el mismo modelo de ejemplo en teoría y ejercicios.
    - **Si ha cambiado algo**, actualízala, cita la fuente oficial y lista en `cambios_README_teoria.md` cada sitio del material donde haya que cambiar el modelo o la versión.
 
+**Criterio de Hugo (17/11/2026, del S05):**
+- El **modelo se comprueba una sola vez**, en el ejercicio de `Practica_live_review`, con el SDK que instalan los `requirements.txt`. No se ejecuta la teoría ni se lanza todo para probar el modelo.
+- Los notebooks con API se ejecutan **de uno en uno**, nunca en paralelo: la capa gratuita da `429 RESOURCE_EXHAUSTED`.
+- La 0b revisa también los **contenidos** (README, teoría, workouts y enunciado de la práctica), no solo el modelo. Lo que no se ha ejecutado o leído a fondo se dice en el informe.
+- La solución de la práctica se ejecuta solo para revisar. **No se libera** con el sprint.
+- Un modelo `*-preview` puede dar 404 con `google-genai` 3.x aunque responda por `curl`: el SDK usa la API `v1` y `curl` suele usar `v1beta`. Prueba siempre con el SDK.
+
 ## Fase 0c · Aplicar los cambios para subirlos al repo
 Basándote en los informes de la Fase 0b que yo te valide:
 - **Notebooks (`.ipynb`):** no se tocan los originales. Crea una copia `_v2`:
@@ -34,6 +41,7 @@ Basándote en los informes de la Fase 0b que yo te valide:
 - **`cambios_aplicados_Sprint_XX.md`:** el informe de lo que has cambiado. Para cada cambio: el archivo, el código del informe y en qué consiste. Lista también lo que no has cambiado a propósito y por qué.
 - **Ejecución en mi ordenador:** prepárame un script para ejecutar ahí los `_v2` que necesiten red o claves, y revisa el resultado cuando te lo pase.
 - **Cuando lo aplique en el repo**, la versión que va al repo no lleva marcas.
+- **Los mismos cambios van también al repo `material`** (PR a la rama de trabajo de quien imparte, en OCT26 `hugo`), para que el sprint siguiente no arrastre el fallo. Los `_SOLUTION` de material sí se corrigen ahí, si Hugo lo pide.
 
 ## Fase 1 · Slides de la sesión de teoría
 - **Formato:** página web publicada como artifact, con el mismo estilo que la plantilla.

@@ -30,6 +30,8 @@ Pregunta qué pieza toca y haz solo los pasos de esa pieza: el 1 para soluciones
 
 Cada copia son dos PRs seguidas: `feature/copy_from_material` → `develop` y `develop` → `main`. El título de la PR a `main` empieza por «release:» solo si abre un sprint, por ejemplo «release: Sprint 05»; si añade soluciones, slides o talleres, empieza por «feat:», por ejemplo «feat: soluciones Sprint 04». Cada pieza va en su propia PR. Las mergea el TA, y la que va a `main` en `equipo-montes` necesita la aprobación de la otra persona.
 
+Ojo con la PR de `develop` a `main`: lleva **todo lo que `develop` tenga pendiente**, no solo la pieza de esa semana (en el S05 arrastró «TC Movies»). Dilo en la descripción. Y el orden importa: la PR a `main` se deja en **borrador** hasta que la copia se haya mergeado en `develop`; solo entonces pasa a «Ready for review», y se comprueba que lleva los ficheros esperados.
+
 ## Repos y ramas
 
 | Repo | Rama de trabajo | Destino |
