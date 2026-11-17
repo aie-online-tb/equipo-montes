@@ -56,6 +56,8 @@ Personal (lo de cada uno), Equipo Montes (nosotros dos, este repo) y Claustro (c
 
 Necesitas tener acceso al repo en GitHub y Claude Code instalado.
 
+0. Activa en tu cuenta de claude.ai los conectores de la tabla de [mapa-recursos.md](mapa-recursos.md#conectores) (Ajustes → Conectores). Sirven en el chat y en Claude Code.
+
 1. Clona el repo junto a los demás repos del bootcamp:
 
 ```bash
