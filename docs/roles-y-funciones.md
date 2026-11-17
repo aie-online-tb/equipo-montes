@@ -43,7 +43,7 @@ Los roles rotan por módulo. Quién es LI en cada módulo está en [li-por-modul
 | 23 | Seguimiento docente en la hoja | Los dos | Continuo |
 | 24 | Tutorías | Los dos | Por definir |
 | 25 | Correcciones de TC y PB con su feedback | Los dos, sobre la marcha | Por entrega |
-| 26 | Coordinación con Álex Cárabe (canal de Slack de los tres) | Los dos, con más peso el TA que le acompaña | La semana |
+| 26 | Coordinación con Álex Cárabe (canal `oct26-claustro-aie`) | Los dos, con más peso el TA que le acompaña | La semana |
 | 27 | Trello y Notion al día, weekly y actas de reunión | Los dos | Continuo |
 | 28 | Calendario: festivos y cambios de fechas | Los dos; un cambio se avisa al otro o se lleva a la weekly | Continuo |
 | 29 | Este repo y sus skills | Por definir | Tema aparte |

@@ -35,10 +35,9 @@ Tiene datos personales de alumnos: se consulta, pero nunca se copia al repo.
 | The Bridge (equipo) | `#equipo-octubre-2026` | Público, equipo del intake |
 | The Bridge (equipo) | `#equipo_docente_octubre-2026` | Privado, equipo docente |
 | The Bridge Online (alumnos) | `ia_engineering_online_oct_26` | Privado, canal de alumnos de OCT26 |
-| The Bridge Online (alumnos) | `oct26-claustro-aie` | Privado, claustro de OCT26 |
+| The Bridge Online (alumnos) | `oct26-claustro-aie` | Privado, claustro de OCT26. Es también el canal de coordinación con Álex Cárabe |
 | The Bridge Online (alumnos) | `claustro_bootcamp_aie_septiembre_26` | Privado, claustro |
 | The Bridge Online (alumnos) | `bootcamp_ia-engineering-may26` | Privado, alumnos de MAY26, fuera del alcance de este repo |
-| Por confirmar | Canal de Soraya, Hugo y Álex Cárabe | Por completar |
 
 Cada uno conecta un solo espacio de Slack a su Claude. El de alumnos no es visible para Claude: los canales de arriba los pasó Hugo el 17/11/2026.
 
@@ -61,7 +60,6 @@ Cada uno conecta un solo espacio de Slack a su Claude. El de alumnos no es visib
 
 ## Por completar
 
-- El canal de los tres con Álex Cárabe.
 - Carpeta de Drive de actas.
 - Deck, la plataforma de ejercicios online.
 - Curso de OCT26 en el campus.
