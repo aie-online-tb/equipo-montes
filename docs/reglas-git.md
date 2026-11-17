@@ -20,7 +20,28 @@ Nota: en git no pueden existir a la vez una rama `hugo` y ramas `hugo/algo`. Por
 6. Si una rama con un uso ya registrado va a sustituirse por otra con otro nombre, antes se avisa y se pide confirmación a una persona.
 7. Commits y PR pequeños.
 
+## Versión del plugin
+
+- Cada PR de `develop` a `main` que cambie un plugin sube su `version` en `plugin.json`: el último número para arreglos, el del medio para skills nuevas y el primero para cambios que obliguen a reinstalar.
+- Cada PR pasa un check automático que valida el marketplace y los plugins. Si sale en rojo, no se mergea.
+
 Las normas de estilo y formato no forman parte de estas reglas. Su estandarización queda como tema futuro (spec 006).
+
+## Guardas
+
+Comprobaciones automáticas que hacen cumplir estas reglas.
+
+| Guarda | Dónde | Qué hace |
+| --- | --- | --- |
+| PR a `main` solo desde `develop` | GitHub Action en `equipo-montes` | Pone la PR en rojo si viene de otra rama |
+| Sin `.env` ni claves | GitHub Action en `equipo-montes` | Pone la PR en rojo si entra un `.env` o algo con forma de clave. Nunca muestra el valor |
+| Plugin válido | GitHub Action en `equipo-montes` | Valida el marketplace y los plugins |
+| `.env` | Hook del plugin `aie-equipo`, en el Claude de cada uno | Impide leer o editar un `.env` |
+| Push a `main` o `develop`, push forzado y PR a `main` desde otra rama | Hook del plugin `aie-equipo` | Pide confirmación antes de hacerlo |
+| Revisión de Claude | GitHub Action en `equipo-montes` | Comenta cada PR a `main` antes de que la revise la otra persona. No aprueba ni mergea. Se activa con [setup/revision-claude.md](../setup/revision-claude.md) |
+| Protección de rama de `main` | Ajustes de GitHub, los pone una persona | Exige PR y check en verde. Pendiente de confirmar que el plan de la organización lo permite en repos privados |
+
+Las guardas de los repos del bootcamp se añaden con su propia PR en cada repo.
 
 ## Ramas con uso registrado en otros repos
 
@@ -28,7 +49,7 @@ Las normas de estilo y formato no forman parte de estas reglas. Su estandarizaci
 | --- | --- | --- |
 | `material_bootcamp_AI_Engineering` | `hugo` | Rama de trabajo de Hugo; base de sus PR |
 | `material_bootcamp_AI_Engineering` | `*_soraya` | Ramas de trabajo de Soraya |
-| Repos de alumnos | `feature_copy_from_material` | Entrada del contenido que viene de material |
+| Repos de alumnos | `feature/copy_from_material` en OCT26 (`feature_copy_from_material` en MAY26) | Entrada del contenido que viene de material |
 | Repos de alumnos | `develop-actas` | Actas de sesión, con PR a `develop` |
 | Todos | `develop` → `main` | Release, con PR titulada «release: …» |
 

@@ -54,7 +54,11 @@ Personal (lo de cada uno), Equipo Montes (nosotros dos, este repo) y Claustro (c
 
 ## 3. Primer día: puesta en marcha
 
+Los pasos completos, con scripts y prompts, están en [setup/](../setup/README.md). Lo que sigue es el resumen.
+
 Necesitas tener acceso al repo en GitHub y Claude Code instalado.
+
+0. Activa en tu cuenta de claude.ai los conectores de la tabla de [mapa-recursos.md](mapa-recursos.md#conectores) (Ajustes → Conectores). Sirven en el chat y en Claude Code.
 
 1. Clona el repo junto a los demás repos del bootcamp:
 
@@ -73,7 +77,12 @@ claude plugin install aie-equipo@equipo-montes
 
 4. Lee la [constitución](../specs/000-constitucion/spec.md) y apunta lo que cambiarías.
 
-Para actualizar las skills más adelante: `claude plugin marketplace update equipo-montes`.
+Para actualizar las skills cuando haya una versión nueva en `main`:
+
+```bash
+claude plugin marketplace update equipo-montes
+claude plugin update aie-equipo@equipo-montes
+```
 
 Aviso: el plugin se instala en Claude Code. Si se puede usar tal cual desde la app de chat con el plan Pro está sin comprobar.
 
@@ -111,24 +120,36 @@ Los identificadores y enlaces están en [mapa-recursos.md](mapa-recursos.md). En
 
 ## 7. Qué está hecho y qué falta
 
-Hecho: roles, funciones, semana tipo, LI por módulo, reglas de git, mapa de recursos, estructura del repo y un plugin con la primera skill (`normas-aie`).
+Estado a 17/11/2026. Todo está en `develop`; `main` sigue vacío hasta la primera release, que se hará cuando Soraya tenga acceso y lo revise.
 
-Por hacer, en este orden propuesto:
-
-| Spec | Qué resuelve |
+| Pieza | Estado |
 | --- | --- |
-| 001 | Cerrar la estructura del repo y del plugin |
-| 002 | Completar el mapa de recursos y declarar los conectores |
-| 003 | Primeras skills comunes: preparar sprint, actas y liberar sprint |
-| 004 | Recordatorios de la semana tipo por rol |
-| 005 | Archivo de mensajes de Slack |
-| 006 | Estandarización de estilo y formato |
+| Roles, funciones, semana tipo, LI por módulo, reglas de git y mapa de recursos | Hecho, pendiente de revisar con Soraya |
+| Plugin `aie-equipo` con las skills `normas-aie`, `acta-sesion`, `preparar-sprint` y `liberar-sprint` | Hecho. `acta-sesion` y `preparar-sprint` salen del material de Soraya y necesitan su revisión |
+| Plantillas de mensajes: apertura, aviso de clase, cierre de semana y proyectos | Hecho |
+| Guardas: GitHub Actions en este repo y hook del plugin que bloquea los `.env` | Hecho |
+| Guardas en el repo de alumnos de OCT26 | En una PR a `develop` de ese repo |
+| Rutinas: maestra (8:00, solo Hugo), diaria (9:00) y PRs (12:00 y 17:00) | Escritas y ensayadas en seco; sin activar |
+| Puesta en marcha (`setup/`) | Hecho; `instalar.sh` sin probar en un Mac |
+| Estandarización de estilo (spec 006) | Tema futuro |
+
+Faltan datos: el id del curso de OCT26 en el campus, la carpeta de Drive de actas, el Deck, la cuenta de Google de OCT26 y las credenciales de Zoom de OCT26.
 
 ## 8. Para la reunión del 17/11
 
-- Revisar la constitución y la asignación de funciones.
-- Tutorías: propuesta de horarios.
+Para decidir juntos:
+
+- La constitución y la asignación de funciones.
+- La copia al repo de alumnos: seguir copiando por partes, como ahora, o una PR de release el martes. Y si el título de la PR a `main` empieza por «release:».
+- Si las PRs de copia a `main` de OCT26 deben avisar al otro para revisar, o solo para mirar después.
+- Cuándo activar las rutinas y si la cuenta Pro de Soraya admite tareas programadas.
 - LI de M06 y puente del 7 y 8 de diciembre.
+- Tutorías: propuesta de horarios.
 - Hoja de seguimiento de OCT26.
 - Quién mantiene este repo.
-- Trello: quitar la cuenta duplicada de Soraya y relevar a Alejandro Reyes como administrador del tablero.
+- Trello: quitar la cuenta duplicada de Soraya, relevar a Alejandro Reyes como administrador del tablero y archivar lo que lleva tiempo en Done.
+
+Para hacer después de la reunión:
+
+- Dar a Soraya acceso al repo, que siga `setup/` y revise las skills que salen de su material.
+- Primera release de `develop` a `main`, con revisión de Soraya.

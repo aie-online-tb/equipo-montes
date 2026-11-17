@@ -13,12 +13,14 @@ Una spec la aprueba una persona, nunca Claude. Trello dice qué se hace y cuánd
 
 ## Estado
 
+Orden de implementación propuesto: 001, 002 y 003 en paralelo; después 005 y 004; la 006, al final.
+
 | N.º | Spec | Estado |
 | --- | --- | --- |
 | 000 | Constitución: principios, roles, capas y reglas | Borrador, pendiente de Soraya |
-| 001 | Estructura del repo y del plugin | Por escribir |
-| 002 | Mapa de recursos y conectores (Trello, Slack, Notion, Calendar) | Por escribir |
-| 003 | Skills iniciales: preparar sprint, actas y liberar sprint | Por escribir |
-| 004 | Semana tipo convertida en recordatorios por rol | Por escribir |
-| 005 | Archivo de mensajes de Slack | Por escribir |
+| 001 | Estructura del repo y del plugin | En curso |
+| 002 | Mapa de recursos y conectores (Trello, Slack, Notion, Calendar) | Aprobada |
+| 003 | Skills iniciales: preparar sprint, liberar sprint y actas | Aprobada |
+| 004 | Rutinas y automatizaciones: recordatorios por rol, Trello y guardas | En curso |
+| 005 | Archivo de mensajes de Slack | En curso |
 | 006 | Estandarización de estilo y formato | Tema futuro |
