@@ -2,7 +2,9 @@
 
 De lunes a viernes a las 9:00, en la cuenta de cada uno. Da a la persona solo lo que le toca hoy según su rol.
 
-Solo lee. Lo que se puede hacer sin publicar ya lo ha hecho la [rutina maestra](maestra.md) a las 8:00 y está en Trello: la diaria lo resume.
+Es el **único aviso diario**: la persona no recibe nada más por la mañana. Llega siempre al mismo hilo, «Avisos». Por eso no repite ni resume los avisos de días anteriores: cada día es independiente y empieza leyendo de nuevo los ficheros de `main`.
+
+Solo lee. Lo que se puede hacer sin publicar ya lo ha hecho la [rutina maestra](maestra.md) a las 8:00 y está en Trello: la diaria lo resume. La maestra no avisa por su cuenta: si falla, lo dice esta rutina.
 
 Conectores: GitHub (este repo y los del bootcamp, lectura), Google Calendar, Trello y Google Sheets. Trello y Sheets, solo para leer.
 
@@ -47,7 +49,7 @@ Propón archivar, sin archivar nada:
 
 ## 5. Recursos que ya existen
 
-Para cada tarea de «Hoy», «Próximos dos días» y «Trello» que figure en esta tabla, añade al final de su línea el recurso, así: `→ skill preparar-sprint`.
+Para cada tarea de «Hoy» y «Vence pronto» que figure en esta tabla, añade al final de su línea el recurso, así: `→ skill preparar-sprint`.
 
 | Tarea (n.º en `roles-y-funciones.md`) | Recurso | Para quién |
 | --- | --- | --- |
@@ -67,7 +69,13 @@ Para cada tarea de «Hoy», «Próximos dos días» y «Trello» que figure en e
 
 ## 6. Formato del aviso
 
+Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo**, sin contar el título. Lo demás, como «y N más», con el enlace al tablero.
+
 - Título: `Diaria · {día} {fecha} · {LI | TA} · Sprint {N}`.
-- Bloques, en este orden: «PRs por revisar» (solo si hay alguna), «Hoy», «Próximos dos días» y «Trello». Viñetas cortas, con hora y enlace, y el recurso del apartado 5 al final de la línea cuando lo haya.
-- Que quepa en una pantalla de móvil. Si hay más, lo más urgente primero y el resto como «y N más».
+- Tres bloques, en este orden:
+  1. **Hoy**: las clases y tareas del día con su hora y, si hay, el recurso del apartado 5. Aquí va también lo del lunes.
+  2. **Vence pronto**: tarjetas vencidas o que vencen en los próximos dos días, con fecha y enlace. Si hay tarjetas sin fecha, una sola línea con el número.
+  3. **Decide tú**: lo que espera una decisión de la persona. Las PRs por revisar, la tarjeta de archivar Done sin OK, las propuestas de archivar tarjetas caducadas y los avisos de la maestra (un fallo o un comentario de aviso). Si no hay nada, el bloque no sale.
+- Viñetas de una línea, con hora y enlace.
+- Si la maestra no ha dejado su comentario un día de trabajo, es la primera línea de «Decide tú».
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.
