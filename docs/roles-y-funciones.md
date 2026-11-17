@@ -29,7 +29,7 @@ Los roles rotan por módulo. Quién es LI en cada módulo está en [li-por-modul
 | 9 | Kahoot: reciclar o crear, solo si hace falta | LI del sprint | El sprint |
 | 10 | PDF de enlaces para profundizar | LI del sprint | El sprint |
 | 11 | Revisar el sprint antes de liberarlo y aplicar las correcciones al repo | LI del sprint | El sprint |
-| 12 | Revisar Deck antes del sprint | TA | La semana |
+| 12 | Revisar Deck de N+1 el viernes anterior y avisar a María si hay cambios | TA | La semana |
 | 13 | Mantenimiento del material: versionar, corregir y generar extras | Los dos | Backlog |
 | 14 | Liberar el sprint: PR de release y soluciones del sprint anterior | TA | La semana |
 | 15 | Campus: sección del sprint, enlaces y guía visual | TA | La semana |
@@ -41,12 +41,12 @@ Los roles rotan por módulo. Quién es LI en cada módulo está en [li-por-modul
 | 21 | Mantener la automatización de grabaciones | Hugo | No rota |
 | 22 | Dudas en Slack | Los dos pendientes | Continuo |
 | 23 | Seguimiento docente en la hoja | Los dos | Continuo |
-| 24 | Tutorías | Los dos | Por definir |
+| 24 | Tutorías | Quien imparte el módulo | Por módulo |
 | 25 | Correcciones de TC y PB con su feedback | Los dos, sobre la marcha | Por entrega |
 | 26 | Coordinación con Álex Cárabe (canal `oct26-claustro-aie`) | Los dos, con más peso el TA que le acompaña | La semana |
-| 27 | Trello y Notion al día, weekly y actas de reunión | Los dos | Continuo |
+| 27 | Trello al día, weekly y actas de reunión | Los dos | Continuo |
 | 28 | Calendario: festivos y cambios de fechas | Los dos; un cambio se avisa al otro o se lleva a la weekly | Continuo |
-| 29 | Este repo y sus skills | Por definir | Tema aparte |
+| 29 | Este repo y sus skills | Los dos | Continuo |
 
 No se genera contenido troncal nuevo: el core del bootcamp ya existe y solo se revisa, versiona y amplía con extras.
 
@@ -55,7 +55,7 @@ No se genera contenido troncal nuevo: el core del bootcamp ya existe y solo se r
 | Capa | Quién | Qué vive ahí | Herramientas |
 | --- | --- | --- | --- |
 | Personal | Cada uno | Borradores, pruebas, skills en incubación y la lista propia del día | Claude Pro personal y ficheros locales |
-| Equipo Montes | Soraya y Hugo | Roles, semana tipo, skills comunes, plantillas y tareas de OCT26 | Este repo, Notion, Trello, Slack y los repos de trabajo |
+| Equipo Montes | Soraya y Hugo | Roles, semana tipo, skills comunes, plantillas y tareas de OCT26 | Este repo, Trello, Slack y los repos de trabajo |
 | Claustro | Equipo Montes con Sergio, Marisa, Álex Cárabe y el resto del equipo | Decisiones de programa, seguimiento no técnico y calendario | Por definir |
 
 Regla de escalado propuesta: algo personal sube al equipo cuando el otro lo necesita o ya se ha usado dos veces; algo del equipo sube al claustro cuando afecta al calendario, a alumnos o a otras personas.

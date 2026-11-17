@@ -2,12 +2,11 @@
 
 Dónde está cada cosa. Aquí van identificadores y enlaces, nunca claves ni tokens. Cada uno se conecta con su propia cuenta.
 
-## Tareas y base compartida
+## Tareas
 
 | Recurso | Identificador | Notas |
 | --- | --- | --- |
 | Trello, tablero «AI Engineering» | https://trello.com/b/iYb6W4J7/ai-engineering | Fuente de verdad de las tareas. Listas: Info, Brainstorming, Backlog, Sprint Planning, Current Sprint, In progress, Done, blocked |
-| Notion, espacio «The Bridge AIE» | https://app.notion.com/p/3e948b5deb6b81fe9e6ed4bd58c62195 | Base compartida: actas, alumnos, calendario, fechas de entrega |
 
 Cuentas de Trello: Hugo es `hugomm_thebridge` (id de miembro `6a564e823f39b80b55665d98`). La cuenta que usa Soraya es `sorayamalpicamontes1` (id de miembro `6a9588ebd27c3031097fa9d1`); existe otra duplicada, `sorayamalpicamontes`, sin uso desde julio de 2026 y pendiente de quitar.
 
@@ -67,7 +66,6 @@ Cada uno activa los conectores en su cuenta de claude.ai (Ajustes → Conectores
 | Herramienta | Conector | Para qué lo usa Claude | Hugo | Soraya |
 | --- | --- | --- | --- | --- |
 | Trello | Trello | Leer el tablero y las tarjetas de cada uno | Conectado | Por comprobar |
-| Notion | Notion | Actas, alumnos, calendario y fechas de entrega | Conectado | Por comprobar |
 | Slack | Slack | Leer canales y preparar borradores de mensajes | Conectado al espacio de equipo | Por comprobar |
 | Google Calendar | Google Calendar | Clases, banners de sprint y quién es LI | Conectado | Por comprobar |
 | Google Sheets y Drive | Google Drive y Google Sheets | Hoja de seguimiento y calendario del curso | Conectado | Por comprobar |
@@ -75,7 +73,8 @@ Cada uno activa los conectores en su cuenta de claude.ai (Ajustes → Conectores
 | Zoom | Zoom | Grabaciones y transcripciones | Conectado | Opcional |
 
 Reglas:
-- Leer, libre. Escribir en Trello, Notion, Slack o el calendario, solo con el OK de una persona.
+- Leer, libre. Escribir en Trello, Slack o el calendario, solo con el OK de una persona. Excepción: la rutina maestra crea tarjetas en Trello ([rutinas/maestra.md](../rutinas/maestra.md)).
+- Notion ya no se usa en OCT26 (decisión del 17/11/2026). Las actas de reunión y las fechas de entrega viven en Drive, en el calendario y en las tarjetas de Trello.
 - Slack solo admite un espacio por cuenta. Cada uno decide cuál conecta: el de equipo (The Bridge) o el de alumnos (The Bridge Online), donde están el canal de alumnos y `oct26-claustro-aie`.
 - Los conectores dependen de la cuenta, no del repo: si uno cambia, se apunta aquí.
 

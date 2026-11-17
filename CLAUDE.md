@@ -16,7 +16,7 @@ Repo de organización y herramientas de Soraya Malpica y Hugo Menéndez, equipo 
   - `docs/roles-y-funciones.md`: las 29 funciones y su rol.
   - `docs/semana-tipo.md`: qué pasa cada día y los plazos.
   - `docs/li-por-modulo.md`: quién es LI en cada módulo y cuándo son los relevos.
-  - `docs/mapa-recursos.md`: dónde está cada cosa (Trello, Notion, calendario, hojas, repos).
+  - `docs/mapa-recursos.md`: dónde está cada cosa (Trello, calendario, hojas, repos).
   - `docs/guia-inicio.md`: la explicación completa para una persona nueva.
 
 ## Reglas de trabajo
@@ -25,7 +25,7 @@ Repo de organización y herramientas de Soraya Malpica y Hugo Menéndez, equipo 
 - Nunca abras una PR a `main` que no venga de `develop`.
 - Si una rama con un uso ya registrado va a sustituirse por otra con otro nombre, avisa y pide confirmación a una persona antes de hacerlo.
 - Commits y PR pequeños.
-- Trello es la fuente de verdad de las tareas. No cambies nada en Trello, Notion, Slack ni el calendario sin que una persona lo apruebe.
+- Trello es la fuente de verdad de las tareas. No cambies nada en Trello, Slack ni el calendario sin que una persona lo apruebe.
 - Cada pieza nueva del sistema nace de una spec en `specs/`. Lee `specs/README.md` antes de proponer una.
 
 ## Redacción

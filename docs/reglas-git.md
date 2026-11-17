@@ -14,11 +14,22 @@ Nota: en git no pueden existir a la vez una rama `hugo` y ramas `hugo/algo`. Por
 
 1. Nunca una PR a `main` que no venga de `develop`.
 2. Toda PR que no sea de `develop` a `main` puede mergearla su autor.
-3. Las PR de `develop` a `main` piden revisión en GitHub a la otra persona, sea LI o TA esa semana.
+3. Las PR de `develop` a `main` no se mergean sin la revisión y la aprobación explícita de la otra persona (Approve en GitHub), sea LI o TA esa semana.
 4. Una PR a `main` puede mergearse sin revisión si falta menos de una hora para que haga falta. Se deja un comentario en la PR con el motivo.
 5. Claude puede hacer commit, push y abrir PR en ramas de trabajo. Nunca mergea a `main`.
 6. Si una rama con un uso ya registrado va a sustituirse por otra con otro nombre, antes se avisa y se pide confirmación a una persona.
-7. Commits y PR pequeños.
+7. Commits y PR pequeños, una PR por tarea (apertura de sprint, soluciones, slides, taller, Team Challenge). No se agrupan en una sola release semanal.
+
+## Títulos de commits y PR
+
+Se usa un prefijo y dos puntos, con el resto en español (decidido el 17/11/2026):
+
+| Prefijo | Para qué |
+| --- | --- |
+| `release:` | Solo la apertura de un sprint o una publicación principal. Por ejemplo, «release: Sprint 05» |
+| `feat:` | Añadir contenido: soluciones, presentaciones, talleres o un Team Challenge. Por ejemplo, «feat: soluciones Sprint 04» |
+| `fix:` | Corregir algo que ya estaba |
+| `chore:` | Pendiente de estandarizar: si dudas entre `feat:` y `chore:`, usa `feat:`. Claude propondrá una norma más fina |
 
 ## Versión del plugin
 
@@ -51,6 +62,6 @@ Las guardas de los repos del bootcamp se añaden con su propia PR en cada repo.
 | `material_bootcamp_AI_Engineering` | `*_soraya` | Ramas de trabajo de Soraya |
 | Repos de alumnos | `feature/copy_from_material` en OCT26 (`feature_copy_from_material` en MAY26) | Entrada del contenido que viene de material |
 | Repos de alumnos | `develop-actas` | Actas de sesión, con PR a `develop` |
-| Todos | `develop` → `main` | Release, con PR titulada «release: …» |
+| Todos | `develop` → `main` | PR por tarea. Titulada «release: …» solo si abre un sprint; «feat: …» si añade soluciones, slides o talleres |
 
 En un repo de alumnos nunca hay `README_profes` ni `_SOLUTION` del sprint activo.

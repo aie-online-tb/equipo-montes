@@ -23,7 +23,7 @@ Todas van en la lista «Current Sprint» del tablero `iYb6W4J7`. El nombre empie
 | `[OCT26 S{N}] PDF de enlaces para profundizar` | LI | Martes, 19:00 |
 | `[OCT26 S{N}] Mensaje de cierre de semana` | TA | Viernes, 14:00 |
 | `[OCT26 S{N+1}] Revisar el sprint y aplicar correcciones` | Quien imparte N+1 | Martes, 19:00 |
-| `[OCT26 S{N+1}] Revisar Deck` | TA | Martes, 19:00 |
+| `[OCT26 S{N+1}] Revisar Deck` | TA | Viernes, 12:00 |
 | `[OCT26 S{N+1}] Sección del campus preparada y oculta` | TA | Martes, 19:00 |
 | `[OCT26 S{N+1}] Copia al repo de alumnos` | TA | Martes, 21:00 |
 | `[OCT26 S{N+1}] Preparar la teórica` | Quien imparte N+1 | Miércoles siguiente, 19:00 |

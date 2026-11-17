@@ -27,4 +27,6 @@ Fuente: los banners de sprint del calendario OCT26 de Google, leídos el 16/11/2
 
 Los miércoles sin Microcredencial UAM los imparte Álex Cárabe.
 
-Pendiente: asignar M06 y decidir qué se hace con el puente del 7 y 8 de diciembre.
+El 17/11/2026 se acordó mover el S08: apertura el 14/12, práctica el 15/12 y sesión de dudas de S06, S07 y S08 el 17/12. La tabla de arriba y el calendario OCT26 siguen con las fechas anteriores hasta que se actualicen (ver [decisiones.md](decisiones.md)).
+
+Pendiente: asignar M06.
