@@ -1,0 +1,40 @@
+name: Guardas
+
+on:
+  pull_request:
+
+jobs:
+  rama-origen:
+    name: PR a main solo desde develop
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar la rama de origen
+        env:
+          BASE: ${{ github.base_ref }}
+          HEAD: ${{ github.head_ref }}
+        run: |
+          if [ "$BASE" = "main" ] && [ "$HEAD" != "develop" ]; then
+            echo "::error::Las PR a main solo pueden venir de develop (esta viene de $HEAD)."
+            exit 1
+          fi
+          echo "OK: $HEAD -> $BASE"
+
+  secretos:
+    name: Sin .env ni claves
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Buscar ficheros .env y claves
+        run: |
+          fallo=0
+          envs=$(git ls-files | grep -E '(^|/)\.env(\..*)?$' | grep -vE '\.env\.(example|ejemplo|sample)$' || true)
+          if [ -n "$envs" ]; then
+            echo "::error::Hay ficheros .env en el repo:"; echo "$envs"; fallo=1
+          fi
+          patron='AIza[0-9A-Za-z_-]{35}|sk-ant-[0-9A-Za-z_-]{20,}|sk-[A-Za-z0-9]{32,}|ghp_[0-9A-Za-z]{36}|github_pat_[0-9A-Za-z_]{40,}|xox[abpr]-[0-9A-Za-z-]{10,}'
+          claves=$(git grep -nIE "$patron" -- . ':!*.pdf' ':!*.ttf' || true)
+          if [ -n "$claves" ]; then
+            echo "::error::Hay algo con forma de clave (no se muestra el valor):"
+            echo "$claves" | cut -d: -f1,2; fallo=1
+          fi
+          exit $fallo
