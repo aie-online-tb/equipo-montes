@@ -42,7 +42,7 @@ Cada resultado va como comentario en su tarjeta. El comentario empieza por `Ruti
 
 | Día | Qué hace | Tarjeta |
 | --- | --- | --- |
-| Martes y miércoles | Mira en `bootcamp_AI_Engineering_10_26` las PRs abiertas de `feature/copy_from_material` a `develop` y de `develop` a `main`. Avisa si hay `_SOLUTION` de N+1, `README_profes.md`, duplicados « 2» o una PR a `main` que no venga de `develop` | Copia al repo de alumnos |
+| Martes y miércoles | Mira en `bootcamp_AI_Engineering_10_26` las PRs abiertas de `feature/copy_from_material` a `develop` y de `develop` a `main`. Avisa de cuatro cosas: soluciones de N+1 (ficheros `*_SOLUTION*` o carpetas `SOLUTION/`), `README_profes.md`, duplicados « 2» y una PR a `main` que no venga de `develop`. El martes, avisa también si a las 8:00 el sprint N+1 aún no está en `feature/copy_from_material` ni en `develop` | Copia al repo de alumnos |
 | Miércoles | Si el sprint N ya está en `main`, borrador del mensaje de apertura con `plantillas/mensajes/apertura-sprint.md` y el `README.md` del sprint | Liberar el sprint y mensaje de apertura |
 | Viernes | Borrador del cierre de semana con `plantillas/mensajes/cierre-semana.md` | Mensaje de cierre de semana |
 

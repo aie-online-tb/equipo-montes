@@ -52,7 +52,7 @@ Si se pide `--dry-run`, haz los pasos de comprobación y enseña el plan complet
 
 ### Paso 1 · Soluciones del sprint N
 
-En `bootcamp_AI_Engineering_10_26`, rama `feature/copy_from_material`: copia desde material todos los `*_SOLUTION*` del sprint N, también los de `Practica_live_review/`, que no estén ya. Déjalos en stage.
+En `bootcamp_AI_Engineering_10_26`, rama `feature/copy_from_material`: copia desde material todas las soluciones del sprint N (ficheros `*_SOLUTION*` y carpetas `SOLUTION/`), también los de `Practica_live_review/`, que no estén ya. Déjalos en stage.
 
 ### Paso 2 · Sprint N+1 sin soluciones
 
@@ -88,7 +88,7 @@ Después, el mensaje de apertura del sprint lo escribe el TA con las plantillas 
 ## Reglas
 
 - Nunca una PR a `main` que no venga de `develop`.
-- Nunca `*_SOLUTION*` del sprint nuevo ni `README_profes.md` en el repo de alumnos.
+- Nunca soluciones del sprint nuevo (`*_SOLUTION*` ni carpetas `SOLUTION/`) ni `README_profes.md` en el repo de alumnos.
 - No se cambia nada en el campus sin confirmación.
 - Ante cualquier caso que estas reglas no cubran, para y pregunta.
 
