@@ -20,13 +20,13 @@ Cubre las funciones que siguen al sprint: preparar la teórica (7), preparar el 
 | Material del sprint | La carpeta del sprint en `material_bootcamp_AI_Engineering`, en la rama de trabajo de quien prepara, o un zip con el sprint |
 | Sesiones | Calendario OCT26: teórica el jueves y práctica el martes, de 19:00 a 21:00. Pregunta cuánto dura el Kahoot de cada una |
 | Ordenador enlazado | Pregunta si hay un ordenador enlazado y en qué carpeta está el sprint |
-| Tabla de modelos del sprint anterior | La del sprint anterior en el repo. Si no la hay, `plantillas/modelos_gemini_alumnos.md` es la del S04 |
+| Tabla de modelos del sprint anterior | La del sprint anterior en el repo. Si no la hay, `plantillas/modelos_gemini_alumnos.md` es la del S05 (17/11/2026) |
 | Hilos conductores ya usados | `referencia/reglas.md`, regla 6. Añade los nuevos al terminar |
 
 3. Plantillas en `plantillas/`:
    - `plantilla_slides.html`: plantilla visual y motor de código de las slides.
    - `plantilla_enlaces_para_profundizar.pdf`: modelo del PDF de la Fase 5.
-   - `modelos_gemini_alumnos.md`: tabla de versiones y modelos del S04.
+   - `modelos_gemini_alumnos.md`: tabla de versiones y modelos del S05.
 
 ## Fases
 

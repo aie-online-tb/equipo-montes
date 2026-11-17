@@ -25,6 +25,7 @@ Pega [prompt-inicial.md](prompt-inicial.md) en el chat del coordinador del proye
 | 6 | Activar las rutinas | Sigue [prompts/activar-rutinas.md](prompts/activar-rutinas.md) | Cada uno su diaria y su rutina de PRs; la maestra, solo Hugo |
 | 7 | Primera prueba | En Claude Code: «¿quién libera el sprint esta semana y cuándo?» | Cada uno |
 | 8 | Activar la revisión de Claude en GitHub | Sigue [revision-claude.md](revision-claude.md) | Solo Hugo, una vez |
+| 9 | Permitir los hosts de Gemini y guardar tu clave como secreto de red (para revisar sprints) | Sigue [entorno-red-y-secretos.md](entorno-red-y-secretos.md) | Cada uno |
 
 Los pasos 2 y 3 se pueden repetir sin miedo: si algo ya está hecho, lo dejan como está.
 
