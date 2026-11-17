@@ -16,7 +16,8 @@ Fuente: los banners de sprint del calendario OCT26 de Google, leídos el 16/11/2
 | Fecha | Qué pasa | Quién |
 | --- | --- | --- |
 | Hasta el miércoles 18/11 | Revisar y preparar el S05 | Hugo |
-| Miércoles 18/11 | Liberar el S05 y acompañar el Taller de Entornos Virtuales | Soraya, ya como TA |
+| Miércoles 18/11 | Liberar el S05 | Hugo, como excepción (decidido el 17/11) |
+| Miércoles 18/11 | Acompañar el Taller de Entornos Virtuales | Soraya, ya como TA |
 | Jueves 19/11 | LR teórica del S05 | Hugo, ya como LI |
 | Lunes 23/11 | Sesión de dudas del S04 | Soraya, que lo impartió |
 | Semana del 02/12 al 08/12 | Revisar y preparar el S08 | Soraya |
