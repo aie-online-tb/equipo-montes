@@ -54,7 +54,7 @@ Cada uno conecta un solo espacio de Slack a su Claude. El de alumnos no es visib
 
 | Recurso | Notas |
 | --- | --- |
-| Zoom, YouTube y campus | Cuenta compartida TA IA ONLINE |
+| Zoom, YouTube y campus | Cuenta compartida TA IA ONLINE, que es la de MAY26. La cuenta de Google de OCT26 está pendiente de conectar |
 | YouTube | Lista «Grabaciones AI Engineering 10-26», vídeos en Oculto |
 | Automatización de grabaciones | Corre en el equipo de Hugo; el TA de la semana comprueba el resultado |
 
@@ -79,6 +79,7 @@ Reglas:
 
 ## Por completar
 
+- Cuenta de Google de OCT26 (Zoom, YouTube y campus), que necesita la automatización de grabaciones.
 - Carpeta de Drive de actas.
 - Deck, la plataforma de ejercicios online.
 - Curso de OCT26 en el campus.
