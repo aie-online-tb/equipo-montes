@@ -48,7 +48,7 @@ Las guardas de los repos del bootcamp se añaden con su propia PR en cada repo.
 | --- | --- | --- |
 | `material_bootcamp_AI_Engineering` | `hugo` | Rama de trabajo de Hugo; base de sus PR |
 | `material_bootcamp_AI_Engineering` | `*_soraya` | Ramas de trabajo de Soraya |
-| Repos de alumnos | `feature_copy_from_material` | Entrada del contenido que viene de material |
+| Repos de alumnos | `feature/copy_from_material` en OCT26 (`feature_copy_from_material` en MAY26) | Entrada del contenido que viene de material |
 | Repos de alumnos | `develop-actas` | Actas de sesión, con PR a `develop` |
 | Todos | `develop` → `main` | Release, con PR titulada «release: …» |
 

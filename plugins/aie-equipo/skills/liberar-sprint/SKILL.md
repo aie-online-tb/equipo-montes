@@ -21,7 +21,7 @@ N es el sprint que cierra y N+1 el que se libera. Si entre los dos hay un Projec
 | Repo | Rama de trabajo | Destino |
 | --- | --- | --- |
 | `material_bootcamp_AI_Engineering` | Solo lectura | Fuente |
-| `bootcamp_AI_Engineering_10_26` | `feature_copy_from_material` | PR a `develop`, luego PR «release: …» de `develop` a `main` |
+| `bootcamp_AI_Engineering_10_26` | `feature/copy_from_material` | PR a `develop`, luego PR «release: …» de `develop` a `main` |
 | `workouts_AIE_permanente` | `main` | Los workouts del campus |
 
 Pregunta en qué carpeta tiene la persona los repos y comprueba que están al día antes de copiar nada.
@@ -38,7 +38,7 @@ Si se pide `--dry-run`, haz los pasos de comprobación y enseña el plan complet
 
 ### Paso 1 · Soluciones del sprint N
 
-En `bootcamp_AI_Engineering_10_26`, rama `feature_copy_from_material`: copia desde material todos los `*_SOLUTION*` del sprint N, también los de `Practica_live_review/`, que no estén ya. Déjalos en stage.
+En `bootcamp_AI_Engineering_10_26`, rama `feature/copy_from_material`: copia desde material todos los `*_SOLUTION*` del sprint N, también los de `Practica_live_review/`, que no estén ya. Déjalos en stage.
 
 ### Paso 2 · Sprint N+1 sin soluciones
 
@@ -49,7 +49,7 @@ En la misma rama, copia el sprint N+1 con la misma ruta de módulo que en materi
 En `workouts_AIE_permanente`, comprueba si está `Sprint_XX/02_Workout/` del sprint N+1. Si falta, cópialo desde material, con `assets/` si los notebooks lo usan. Aquí sí pueden ir los `_SOLUTION`. Déjalo en stage.
 
 Al terminar los pasos 1 a 3, enseña qué hay en stage en cada repo y **espera el OK** antes de hacer commit, push o abrir PR. Con el OK, el orden es:
-1. PR de `feature_copy_from_material` a `develop`.
+1. PR de `feature/copy_from_material` a `develop`.
 2. PR «release: Sprint XX» de `develop` a `main`, que se deja abierta para el miércoles.
 
 ### Paso 4 · Miércoles: liberar
