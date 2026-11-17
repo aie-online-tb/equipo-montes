@@ -27,6 +27,21 @@ Nota: en git no pueden existir a la vez una rama `hugo` y ramas `hugo/algo`. Por
 
 Las normas de estilo y formato no forman parte de estas reglas. Su estandarización queda como tema futuro (spec 006).
 
+## Guardas
+
+Comprobaciones automáticas que hacen cumplir estas reglas.
+
+| Guarda | Dónde | Qué hace |
+| --- | --- | --- |
+| PR a `main` solo desde `develop` | GitHub Action en `equipo-montes` | Pone la PR en rojo si viene de otra rama |
+| Sin `.env` ni claves | GitHub Action en `equipo-montes` | Pone la PR en rojo si entra un `.env` o algo con forma de clave. Nunca muestra el valor |
+| Plugin válido | GitHub Action en `equipo-montes` | Valida el marketplace y los plugins |
+| `.env` | Hook del plugin `aie-equipo`, en el Claude de cada uno | Impide leer o editar un `.env` |
+| Push a `main` o `develop`, push forzado y PR a `main` desde otra rama | Hook del plugin `aie-equipo` | Pide confirmación antes de hacerlo |
+| Protección de rama de `main` | Ajustes de GitHub, los pone una persona | Exige PR y check en verde |
+
+Las guardas de los repos del bootcamp se añaden con su propia PR en cada repo.
+
 ## Ramas con uso registrado en otros repos
 
 | Repo | Rama | Uso |
