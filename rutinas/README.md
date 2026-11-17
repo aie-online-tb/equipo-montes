@@ -11,6 +11,8 @@ Una sola rutina escribe y dos leen. Así no hay tarjetas duplicadas y cada uno p
 
 ## Cómo se activa
 
+Los pasos completos, con el texto que se pega, están en [setup/prompts/activar-rutinas.md](../setup/prompts/activar-rutinas.md). En resumen:
+
 1. Crea una tarea programada en tu cuenta de Claude, con el horario de la tabla y la zona horaria Europe/Madrid.
 2. Dale acceso a los conectores que pide el fichero y al repo `aie-online-tb/equipo-montes`. La maestra necesita además el entorno con el secreto de Trello.
 3. Pega este texto, cambiando el nombre:
@@ -24,5 +26,5 @@ Lee el fichero rutinas/{maestra | diaria}.md de la rama main del repo aie-online
 ## Reglas para todas las rutinas
 
 - Usa un modelo ligero. Lo que cuesta es el razonamiento largo, no la rutina.
-- Nunca publican en Slack, nunca cambian el campus y nunca mueven, archivan ni borran tarjetas. Solo la maestra crea tarjetas y comenta en ellas.
+- Nunca publican en Slack, nunca cambian el campus y nunca mueven, archivan ni borran tarjetas. Solo la maestra crea tarjetas y comenta en ellas, y solo archiva las de Done tras un «OK» de Hugo en su tarjeta.
 - Si falta un dato o un conector, lo dicen en el aviso y siguen con lo demás.

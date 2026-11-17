@@ -38,7 +38,7 @@ Del tablero `iYb6W4J7`, las tarjetas pendientes asignadas a la persona. Pendient
 Si hoy es día de trabajo de la maestra y no hay ningún comentario suyo, dilo: puede haber fallado.
 
 Propón archivar, sin archivar nada:
-- las tarjetas de la persona en «Done 🎉» con más de 14 días sin movimiento, solo el número;
+- si la persona es Hugo y la tarjeta `[Trello] ¿Archivar N tarjetas de Done?` de la maestra sigue sin su OK, una línea con el número y el enlace;
 - las pendientes que parezcan caducadas: de MAY26, de sprints ya liberados o sin movimiento en 30 días. Para estas, el nombre y el motivo.
 
 ## 4. Formato del aviso

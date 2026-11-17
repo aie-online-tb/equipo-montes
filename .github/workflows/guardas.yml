@@ -31,7 +31,8 @@ jobs:
           if [ -n "$envs" ]; then
             echo "::error::Hay ficheros .env en el repo:"; echo "$envs"; fallo=1
           fi
-          patron='AIza[0-9A-Za-z_-]{35}|sk-ant-[0-9A-Za-z_-]{20,}|sk-[A-Za-z0-9]{32,}|ghp_[0-9A-Za-z]{36}|github_pat_[0-9A-Za-z_]{40,}|xox[abpr]-[0-9A-Za-z-]{10,}'
+          # Con borde a los dos lados, para no confundir una clave con un trozo de imagen en base64.
+          patron='(^|[^A-Za-z0-9_+/-])(AIza[0-9A-Za-z_-]{35}|sk-ant-[0-9A-Za-z_-]{20,}|sk-[A-Za-z0-9]{32,}|ghp_[0-9A-Za-z]{36}|github_pat_[0-9A-Za-z_]{40,}|xox[abpr]-[0-9A-Za-z-]{10,})([^A-Za-z0-9_+/-]|$)'
           claves=$(git grep -nIE "$patron" -- . ':!*.pdf' ':!*.ttf' || true)
           if [ -n "$claves" ]; then
             echo "::error::Hay algo con forma de clave (no se muestra el valor):"

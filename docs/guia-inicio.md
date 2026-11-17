@@ -54,6 +54,8 @@ Personal (lo de cada uno), Equipo Montes (nosotros dos, este repo) y Claustro (c
 
 ## 3. Primer día: puesta en marcha
 
+Los pasos completos, con scripts y prompts, están en [setup/](../setup/README.md). Lo que sigue es el resumen.
+
 Necesitas tener acceso al repo en GitHub y Claude Code instalado.
 
 0. Activa en tu cuenta de claude.ai los conectores de la tabla de [mapa-recursos.md](mapa-recursos.md#conectores) (Ajustes → Conectores). Sirven en el chat y en Claude Code.
