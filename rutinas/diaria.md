@@ -4,7 +4,7 @@ De lunes a viernes a las 9:00, en la cuenta de cada uno. Da a la persona solo lo
 
 Solo lee. Lo que se puede hacer sin publicar ya lo ha hecho la [rutina maestra](maestra.md) a las 8:00 y está en Trello: la diaria lo resume.
 
-Conectores: GitHub (este repo), Google Calendar, Trello y Google Sheets. Trello y Sheets, solo para leer.
+Conectores: GitHub (este repo y los del bootcamp, lectura), Google Calendar, Trello y Google Sheets. Trello y Sheets, solo para leer.
 
 ## 1. Situarse
 
@@ -12,7 +12,7 @@ Conectores: GitHub (este repo), Google Calendar, Trello y Google Sheets. Trello 
 2. Lee `docs/li-por-modulo.md`, `docs/semana-tipo.md` y `docs/roles-y-funciones.md` de este repo, en `main`.
 3. Saca N del calendario OCT26. Los banners de sprint van de jueves a miércoles, pero nuestra semana va de miércoles a martes. Por eso N no es el banner de hoy, sino el banner que contiene el jueves de esta semana: mañana si hoy es miércoles, o el jueves pasado en los demás días. Ejemplo: el miércoles 18/11/2026 el banner de hoy es S04, pero N es S05.
 4. Averigua el rol de la persona esta semana (LI o TA) y si va a impartir N+1, porque las funciones que siguen al sprint se preparan una semana antes.
-5. Si hoy no hay clases (festivo, vacaciones o Project Break), dilo en una línea y da solo lo de los apartados 3 y 4.
+5. Si hoy no hay clases (festivo, vacaciones o Project Break), dilo en una línea y da solo lo de los apartados 3, 4 y 5.
 
 ## 2. Qué toca hoy
 
@@ -27,7 +27,11 @@ Según el día, añade:
 | Miércoles | Al TA: liberar hacia las 13:00. Si la maestra ha dejado el borrador de apertura, el enlace a la tarjeta |
 | Viernes | Al TA: el enlace a la tarjeta con el borrador del cierre de semana, para revisar y publicar |
 
-## 3. Tarjetas de Trello
+## 3. PRs por revisar
+
+Sigue [revision-prs.md](revision-prs.md) para la persona: las PRs a `main` que no ha abierto ella y esperan su revisión.
+
+## 4. Tarjetas de Trello
 
 Del tablero `iYb6W4J7`, las tarjetas pendientes asignadas a la persona. Pendiente quiere decir no archivada y fuera de las listas «Done 🎉» e «Info»:
 - vencidas;
@@ -41,9 +45,9 @@ Propón archivar, sin archivar nada:
 - si la persona es Hugo y la tarjeta `[Trello] ¿Archivar N tarjetas de Done?` de la maestra sigue sin su OK, una línea con el número y el enlace;
 - las pendientes que parezcan caducadas: de MAY26, de sprints ya liberados o sin movimiento en 30 días. Para estas, el nombre y el motivo.
 
-## 4. Formato del aviso
+## 5. Formato del aviso
 
 - Título: `Diaria · {día} {fecha} · {LI | TA} · Sprint {N}`.
-- Tres bloques como mucho: «Hoy», «Próximos dos días» y «Trello». Viñetas cortas, con hora y enlace.
+- Bloques, en este orden: «PRs por revisar» (solo si hay alguna), «Hoy», «Próximos dos días» y «Trello». Viñetas cortas, con hora y enlace.
 - Que quepa en una pantalla de móvil. Si hay más, lo más urgente primero y el resto como «y N más».
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.

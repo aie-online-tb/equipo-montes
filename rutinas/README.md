@@ -6,8 +6,9 @@ Tareas programadas de Claude. Las instrucciones están aquí; la tarea programad
 | --- | --- | --- | --- | --- |
 | Maestra | [maestra.md](maestra.md) | De lunes a viernes, 8:00 | Solo la de Hugo | Crea tarjetas, comprueba la copia al repo de alumnos y deja borradores en Trello |
 | Diaria | [diaria.md](diaria.md) | De lunes a viernes, 9:00 | La de cada uno | Solo lee: resume a cada uno lo suyo |
+| PRs | [revision-prs.md](revision-prs.md) | De lunes a viernes, 12:00 y 17:00 | La de cada uno | Avisa de las PRs a `main` que esperan tu revisión; si no hay, no avisa |
 
-Una sola rutina escribe y dos leen. Así no hay tarjetas duplicadas y cada uno puede apagar su diaria sin afectar al otro.
+Una sola rutina escribe y las demás solo leen. Así no hay tarjetas duplicadas y cada uno puede apagar su diaria sin afectar al otro.
 
 ## Cómo se activa
 

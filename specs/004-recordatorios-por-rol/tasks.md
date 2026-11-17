@@ -13,3 +13,5 @@
 - [x] Guardas del repo de alumnos de OCT26 (PR #22 de ese repo).
 - [x] Limpieza semanal de Done en la maestra, con OK de Hugo por comentario.
 - [x] Carpeta `setup/` con pasos, scripts y prompts.
+- [x] `rutinas/revision-prs.md`: aviso de PRs a `main` por revisar.
+- [ ] Activar la rutina de PRs en la cuenta de Hugo y en la de Soraya.
