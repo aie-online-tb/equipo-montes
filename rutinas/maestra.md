@@ -2,9 +2,25 @@
 
 De lunes a viernes a las 8:00, solo en la cuenta de Hugo y en el entorno que tiene el secreto de Trello. Hace todo lo que se puede hacer sin publicar y deja el resultado en Trello, para que la [diaria](diaria.md) de cada uno lo lea a las 9:00.
 
-Conectores: GitHub (este repo y `bootcamp_AI_Engineering_10_26`, solo lectura), Google Calendar y Trello. Para asignar personas, la API REST de Trello.
+Conectores: GitHub (este repo y `bootcamp_AI_Engineering_10_26`, solo lectura), Google Calendar y Trello. En Trello lee con el conector o con la API REST, pero **todo lo que escribe lo hace con la API REST** (apartado «Cómo escribe en Trello»).
 
 Es la única rutina que escribe en Trello. La decisión de Hugo, del 17/11/2026, es que crea tarjetas y comenta en ellas sin pedir OK. **Nunca mueve, archiva, borra ni marca como hecha una tarjeta, y nunca publica nada.** La única excepción es la limpieza de Done del apartado 3, que solo archiva tras un comentario «OK» de Hugo.
+
+## Cómo escribe en Trello
+
+Esta rutina corre sin nadie delante. Las herramientas de escritura del conector de Trello piden permiso y se quedan esperando, así que no se usan. Se escribe con `curl` a `https://api.trello.com/1/`: el entorno añade las credenciales, así que no se pone ninguna clave ni token en la URL. Si una llamada falla, no se reintenta con el conector: se anota en el registro y se sigue.
+
+Tablero `iYb6W4J7`. Lista «Current Sprint»: `6ac788da4495c71e9e810cda`.
+
+| Qué | Llamada |
+| --- | --- |
+| Buscar tarjetas, también archivadas | `GET /1/boards/iYb6W4J7/cards/all?fields=name,closed,idList,due` |
+| Crear una tarjeta | `POST /1/cards` con `idList`, `name`, `desc`, `due` (UTC, ISO 8601) e `idMembers` (la persona asignada) |
+| Comentar | `POST /1/cards/{id}/actions/comments` con `text` |
+| Archivar (solo limpieza de Done con OK) | `PUT /1/cards/{id}` con `closed=true` |
+| Marcar como hecha (solo limpieza de Done con OK) | `PUT /1/cards/{id}` con `dueComplete=true` |
+
+Los parámetros van con `--data-urlencode`, para que los acentos y los saltos de línea de `name`, `desc` y `text` lleguen bien.
 
 ## 1. Situarse
 
@@ -34,7 +50,7 @@ La descripción de cada tarjeta lleva en dos o tres líneas qué hay que hacer, 
 
 **Sin duplicados.** Antes de crear una tarjeta, busca en el tablero, abiertas y archivadas, una con el mismo nombre. Si existe, no la crea.
 
-**Asignar.** Asigna cada tarjeta a quien tiene ese rol esta semana, con la API REST: `POST /1/cards/{id}/idMembers?value={idMiembro}`. Los ids de miembro están en `docs/mapa-recursos.md`. Si la API falla, deja la tarjeta sin asignar y lo anota en el registro.
+**Asignar.** Asigna cada tarjeta a quien tiene ese rol esta semana al crearla, con `idMembers`. Los ids de miembro están en `docs/mapa-recursos.md`. Si la API falla, deja la tarjeta sin asignar y lo anota en el registro.
 
 ## 3. Limpieza de Done
 
