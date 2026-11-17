@@ -78,7 +78,7 @@ Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo
   1. **Hoy**: las clases y tareas del día con su hora. Aquí va también lo del lunes.
   2. **Vence pronto**: tarjetas vencidas o que vencen en los próximos dos días, con fecha y enlace. Si hay tarjetas sin fecha, una sola línea con el número.
   3. **Decide tú**: lo que espera una decisión de la persona. Las PRs por revisar, la tarjeta de archivar Done sin OK, las propuestas de archivar tarjetas caducadas y los avisos de la maestra (un fallo o un comentario de aviso). Si no hay nada, el bloque no sale.
-- Viñetas de una línea, con hora y enlace.
+- **Una tarea, una viñeta**, de una línea y con hora o enlace. No juntes dos tareas en la misma viñeta ni dejes frases sueltas al final de una (por ejemplo «Teórica del S05 y Kahoot»: eso va en la tarjeta de skills, no en el texto).
 - Si la maestra no ha dejado su comentario un día de trabajo, es la primera línea de «Decide tú».
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.
 
