@@ -1,6 +1,6 @@
 ---
 name: liberar-sprint
-description: Libera un sprint del bootcamp AI Engineering de The Bridge en el intake OCT26. El martes prepara la release (soluciones del sprint que cierra, sprint nuevo sin soluciones y workouts) y el miércoles comprueba la liberación y deja el campus listo. Úsala cuando el TA diga «liberar el sprint», «preparar la release», «cambio de sprint», «abre el siguiente sprint» o «deja el campus listo».
+description: Libera un sprint del bootcamp AI Engineering de The Bridge en el intake OCT26. Antes de copiar nada comprueba que el sprint nuevo está revisado con preparar-sprint; el martes prepara la release (soluciones del sprint que cierra, sprint nuevo sin soluciones y workouts) y el miércoles comprueba la liberación y deja el campus listo. Úsala cuando el TA diga «liberar el sprint», «preparar la release», «cambio de sprint», «abre el siguiente sprint» o «deja el campus listo».
 ---
 
 # liberar-sprint
@@ -11,7 +11,7 @@ Funciones 14 (liberar el sprint) y 15 (campus) del TA. Basada en la skill person
 
 | Día | Qué | Quién |
 | --- | --- | --- |
-| Martes, desde las 19:00 | Pasos 0 a 3: dejar la release preparada y abrir la PR mientras el LI da la práctica | TA |
+| Martes, desde las 19:00 | Puerta de revisión y pasos 0 a 3: dejar la release preparada y abrir la PR mientras el LI da la práctica | TA |
 | Miércoles, hacia las 13:00 | Paso 4 y 5: mergear la release, mostrar la sección del campus y comprobar enlaces | TA |
 
 N es el sprint que cierra y N+1 el que se libera. Si entre los dos hay un Project Break, para y pregunta qué se libera.
@@ -26,7 +26,7 @@ En OCT26 el contenido no entra en una sola release semanal. Cada pieza es una co
 | Soluciones del sprint anterior | Después de su práctica del martes |
 | Slides del jueves y otros añadidos (talleres) | Cuando estén listos |
 
-Pregunta qué pieza toca y haz solo los pasos de esa pieza: el 1 para soluciones, el 2 y el 3 para el sprint nuevo, y una copia directa para slides y añadidos.
+Pregunta qué pieza toca y haz solo los pasos de esa pieza: el 1 para soluciones, el 2 y el 3 para el sprint nuevo, y una copia directa para slides y añadidos. La puerta de revisión solo se pasa al copiar el sprint nuevo.
 
 Cada copia son dos PRs seguidas: `feature/copy_from_material` → `develop` y `develop` → `main`. El título de la PR a `main` empieza por «release:» solo si abre un sprint, por ejemplo «release: Sprint 05»; si añade soluciones, slides o talleres, empieza por «feat:», por ejemplo «feat: soluciones Sprint 04». Cada pieza va en su propia PR. Las mergea el TA, y la que va a `main` en `equipo-montes` necesita la aprobación de la otra persona.
 
@@ -44,11 +44,27 @@ Pregunta en qué carpeta tiene la persona los repos y comprueba que están al d�
 
 Si se pide `--dry-run`, haz los pasos de comprobación y enseña el plan completo sin copiar ni cambiar nada.
 
+### Puerta de revisión · el sprint N+1 está revisado
+
+Solo al copiar el sprint nuevo, y antes del Paso 0. Lo que se copia al repo de alumnos es lo que van a leer ellos, así que primero tiene que estar revisado. Quien imparte el sprint lo hace con la skill `preparar-sprint`, en sus fases 0, 0b y 0c; aquí solo se comprueba que está hecho. Pide a la persona los informes, o búscalos en su carpeta `Sprint_XX/preparacion_TA`:
+
+| Fase de `preparar-sprint` | Qué prueba que está hecha |
+| --- | --- |
+| 0 · Análisis y versiones | Tabla de versiones y modelos del sprint. Si algo cambió respecto al sprint anterior, con la fuente oficial. Preguntas del análisis resueltas |
+| 0b · Revisión del material | `fase3_revision_material_practica.md` y `cambios_README_teoria.md`, sin hallazgos obligatorios abiertos |
+| 0c · Aplicar cambios | `cambios_aplicados_Sprint_XX.md` y los cambios ya aplicados en material (README y teoría con la tabla de modelos, sin marcas de revisión) |
+
+Las fases 1, 2a, 2b, 4 y 5 (slides, notas, mazo de notas, caso práctico y PDF de enlaces) no bloquean la liberación: son para las sesiones y entran después, como piezas aparte.
+
+- Si falta alguna prueba, **para**, dilo y ofrece lanzar `preparar-sprint` con las fases que faltan (para revisar, la 0, la 0b y la 0c).
+- Solo se sigue sin ellas si la persona lo pide de forma explícita. Anótalo en Incidencias del informe, con quién lo decidió.
+
 ### Paso 0 · Comprobar el sprint N+1 en material
 
 - Localiza el módulo y la carpeta del sprint N+1. Desde el S05 la estructura es `<Modulo>/Sprint_XX/{01_Teoria/NN_Bloque/, 02_Workout/NN_Bloque/, Practica_live_review/, README.md, assets/}`.
 - Si falta `01_Teoria/`, `02_Workout/` o el `README.md`, para y avisa.
 - Las carpetas que terminan en « 2» son duplicados de Finder: no se copian nunca y se listan en Incidencias.
+- Busca en lo que se va a copiar marcas de revisión (✏️, ⚠️, ℹ️, 🤖) y copias `_v2`. Si hay alguna, no se copia: se lista en Incidencias.
 
 ### Paso 1 · Soluciones del sprint N
 
@@ -75,13 +91,14 @@ Al terminar los pasos 1 a 3, enseña qué hay en stage en cada repo y **espera e
 ### Paso 5 · Informe
 
 1. Sprints N y N+1 detectados.
-2. Soluciones añadidas.
-3. Sprint N+1 copiado.
-4. Workouts: completos o qué se copió.
-5. Campus: recursos revisados y URL finales.
-6. Qué ha quedado en stage o en PR en cada repo.
-7. Incidencias y duplicados « 2».
-8. Ambigüedades, con la pregunta para la persona.
+2. Puerta de revisión: qué pruebas había, cuáles faltaban y si se siguió sin ellas.
+3. Soluciones añadidas.
+4. Sprint N+1 copiado.
+5. Workouts: completos o qué se copió.
+6. Campus: recursos revisados y URL finales.
+7. Qué ha quedado en stage o en PR en cada repo.
+8. Incidencias, marcas de revisión y duplicados « 2».
+9. Ambigüedades, con la pregunta para la persona.
 
 Después, el mensaje de apertura del sprint lo escribe el TA con las plantillas de mensajes (spec 005).
 
@@ -89,6 +106,7 @@ Después, el mensaje de apertura del sprint lo escribe el TA con las plantillas 
 
 - Nunca una PR a `main` que no venga de `develop`.
 - Nunca soluciones del sprint nuevo (`*_SOLUTION*` ni carpetas `SOLUTION/`) ni `README_profes.md` en el repo de alumnos.
+- Nunca marcas ni iconos de revisión en lo que va al repo de alumnos.
 - No se cambia nada en el campus sin confirmación.
 - Ante cualquier caso que estas reglas no cubran, para y pregunta.
 
