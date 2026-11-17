@@ -16,12 +16,26 @@ Funciones 14 (liberar el sprint) y 15 (campus) del TA. Basada en la skill person
 
 N es el sprint que cierra y N+1 el que se libera. Si entre los dos hay un Project Break, para y pregunta qué se libera.
 
+### Copias por partes
+
+En OCT26 el contenido no entra en una sola release semanal. Cada pieza es una copia aparte:
+
+| Pieza | Cuándo suele entrar |
+| --- | --- |
+| Sprint N+1 sin soluciones | Martes o miércoles, antes de liberar |
+| Soluciones del sprint anterior | Después de su práctica del martes |
+| Slides del jueves y otros añadidos (talleres) | Cuando estén listos |
+
+Pregunta qué pieza toca y haz solo los pasos de esa pieza: el 1 para soluciones, el 2 y el 3 para el sprint nuevo, y una copia directa para slides y añadidos.
+
+Cada copia son dos PRs seguidas: `feature/copy_from_material` → `develop` y `develop` → `main`. El título dice qué entra, por ejemplo «Añadir sprint 05» o «Soluciones sprint 04». Las mergea el TA.
+
 ## Repos y ramas
 
 | Repo | Rama de trabajo | Destino |
 | --- | --- | --- |
 | `material_bootcamp_AI_Engineering` | Solo lectura | Fuente |
-| `bootcamp_AI_Engineering_10_26` | `feature/copy_from_material` | PR a `develop`, luego PR «release: …» de `develop` a `main` |
+| `bootcamp_AI_Engineering_10_26` | `feature/copy_from_material` | PR a `develop`, luego PR de `develop` a `main` |
 | `workouts_AIE_permanente` | `main` | Los workouts del campus |
 
 Pregunta en qué carpeta tiene la persona los repos y comprueba que están al día antes de copiar nada.
@@ -50,11 +64,11 @@ En `workouts_AIE_permanente`, comprueba si está `Sprint_XX/02_Workout/` del spr
 
 Al terminar los pasos 1 a 3, enseña qué hay en stage en cada repo y **espera el OK** antes de hacer commit, push o abrir PR. Con el OK, el orden es:
 1. PR de `feature/copy_from_material` a `develop`.
-2. PR «release: Sprint XX» de `develop` a `main`, que se deja abierta para el miércoles.
+2. PR de `develop` a `main` con el título de la pieza. Si es el sprint nuevo, se deja abierta hasta la hora de liberar del miércoles.
 
 ### Paso 4 · Miércoles: liberar
 
-- La release la mergea una persona. Comprueba después que el sprint N+1 está en `main` y que no hay `_SOLUTION` de N+1 ni `README_profes.md`.
+- La PR a `main` la mergea el TA, nunca Claude. Comprueba después que el sprint N+1 está en `main` y que no hay `_SOLUTION` de N+1 ni `README_profes.md`.
 - Campus: en la sección del sprint N+1, comprueba que cada «Fundamentos técnicos y ejemplos» apunta a `blob/main/<Modulo>/Sprint_XX/01_Teoria/NN_Bloque/README.md`, o a la carpeta si el bloque no tiene README, igual que el sprint anterior. El curso de OCT26 está en `docs/mapa-recursos.md` del repo `equipo-montes`.
 - La sección se muestra solo cuando la persona lo confirme.
 
