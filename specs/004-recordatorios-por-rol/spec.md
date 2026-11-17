@@ -25,6 +25,7 @@ La semana tipo está escrita, pero los roles cambian con el módulo y las funcio
 - **Solo la maestra escribe en Trello.** Si escribieran las dos cuentas, saldrían tarjetas duplicadas. Además, asignar personas solo funciona con la API de Trello desde el entorno de Hugo. La cuenta de Soraya puede escribir en Trello con el conector; lo que lo impide en sus rutinas es esta regla, no un permiso.
 - **La maestra crea tarjetas y comenta sin pedir OK** (decisión de Hugo, 17/11/2026). Mover, archivar, borrar o marcar como hecha sigue necesitando el OK de una persona.
 - **La diaria calcula el rol cada mañana.** En un relevo no hay que tocar nada.
+- **Aviso de PRs a `main` pendientes de revisar** (Hugo, 17/11/2026): en la diaria y en una rutina a las 12:00 y a las 17:00, aunque llegue el correo de GitHub. Cuenta toda PR a `main` que no haya abierto la persona. Ver `rutinas/revision-prs.md`.
 - **Los datos de alumnos no van a Trello.** La diaria los lee directamente de la hoja de seguimiento.
 - **Ninguna rutina publica nada.** Avisan y dejan borradores; publicar es cosa de una persona.
 - **Instrucciones en el repo, no en la rutina.** La rutina solo dice qué fichero de `rutinas/` seguir. Así se cambian por PR y no se pagan miles de caracteres en cada ejecución.

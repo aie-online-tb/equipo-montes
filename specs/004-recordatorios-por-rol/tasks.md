@@ -7,7 +7,11 @@
 - [x] Guardas de `equipo-montes` y hook del plugin.
 - [x] Prueba a mano de la diaria simulando el 18/11/2026 (17/11/2026: corregido el cálculo de N y qué es una tarjeta pendiente).
 - [x] Simulación de la rutina maestra (17/11/2026: añadidas las carpetas `SOLUTION/` y el aviso del martes).
-- [ ] Desactivar la Diaria antigua (`trig_01PZAkQ8L1noUgLqdW6snFbV`), con OK de Hugo.
+- [x] Borrar la Diaria antigua (17/11/2026, a petición de Hugo).
 - [ ] Activar la diaria en la cuenta de Hugo y en la de Soraya.
 - [ ] Activar la rutina maestra en la cuenta de Hugo.
-- [ ] Guardas del repo de alumnos de OCT26.
+- [x] Guardas del repo de alumnos de OCT26 (PR #22 de ese repo).
+- [x] Limpieza semanal de Done en la maestra, con OK de Hugo por comentario.
+- [x] Carpeta `setup/` con pasos, scripts y prompts.
+- [x] `rutinas/revision-prs.md`: aviso de PRs a `main` por revisar.
+- [ ] Activar la rutina de PRs en la cuenta de Hugo y en la de Soraya.

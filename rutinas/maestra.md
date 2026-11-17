@@ -4,7 +4,7 @@ De lunes a viernes a las 8:00, solo en la cuenta de Hugo y en el entorno que tie
 
 Conectores: GitHub (este repo y `bootcamp_AI_Engineering_10_26`, solo lectura), Google Calendar y Trello. Para asignar personas, la API REST de Trello.
 
-Es la única rutina que escribe en Trello. La decisión de Hugo, del 17/11/2026, es que crea tarjetas y comenta en ellas sin pedir OK. **Nunca mueve, archiva, borra ni marca como hecha una tarjeta, y nunca publica nada.**
+Es la única rutina que escribe en Trello. La decisión de Hugo, del 17/11/2026, es que crea tarjetas y comenta en ellas sin pedir OK. **Nunca mueve, archiva, borra ni marca como hecha una tarjeta, y nunca publica nada.** La única excepción es la limpieza de Done del apartado 3, que solo archiva tras un comentario «OK» de Hugo.
 
 ## 1. Situarse
 
@@ -36,7 +36,15 @@ La descripción de cada tarjeta lleva en dos o tres líneas qué hay que hacer, 
 
 **Asignar.** Asigna cada tarjeta a quien tiene ese rol esta semana, con la API REST: `POST /1/cards/{id}/idMembers?value={idMiembro}`. Los ids de miembro están en `docs/mapa-recursos.md`. Si la API falla, deja la tarjeta sin asignar y lo anota en el registro.
 
-## 3. Trabajo que hace sola
+## 3. Limpieza de Done
+
+Los miércoles cuenta las tarjetas de la lista «Done 🎉» que siguen sin archivar y llevan más de 14 días sin movimiento.
+
+- Si hay alguna, crea la tarjeta `[Trello] ¿Archivar N tarjetas de Done? · semana del {dd/mm}` en «Current Sprint». La asigna a Hugo y vence el viernes a las 14:00. En la descripción van la lista de tarjetas, con su nombre y su enlace, y la pregunta: «Comenta OK en esta tarjeta para archivarlas todas, o OK menos los números que quieras conservar».
+- Cada día mira si esa tarjeta tiene un comentario de Hugo con «OK». Si lo tiene, archiva las tarjetas de la lista menos las que el comentario excluya, deja un comentario con lo que ha archivado y marca la tarjeta como hecha. El comentario de Hugo es su OK; sin él no archiva nada.
+- Si la tarjeta de la semana anterior sigue sin OK, no crea otra: actualiza la lista y el número en la que ya existe.
+
+## 4. Trabajo que hace sola
 
 Cada resultado va como comentario en su tarjeta. El comentario empieza por `Rutina maestra · {fecha}`. Si ese día ya hay uno, no repite.
 
@@ -48,6 +56,6 @@ Cada resultado va como comentario en su tarjeta. El comentario empieza por `Ruti
 
 Los borradores siguen la skill `normas-aie`. No llevan datos de alumnos.
 
-## 4. Registro
+## 5. Registro
 
 Al terminar, un resumen corto: tarjetas creadas con su persona y su fecha, las que ya existían, los comentarios dejados y lo que no se pudo hacer, con el motivo. Hugo solo necesita mirarlo si algo falló, porque la diaria ya avisa a cada uno.

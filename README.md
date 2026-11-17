@@ -24,6 +24,7 @@ claude plugin install aie-equipo@equipo-montes
 | `plugins/aie-equipo/` | Las skills comunes, instalables como plugin de Claude Code |
 | `plantillas/` | Mensajes de Slack, slides y PDF que reutilizamos |
 | `rutinas/` | El texto de cada tarea programada, para activarla en la cuenta de quien toque |
+| `setup/` | Pasos, scripts y prompts para dejarlo todo funcionando después de clonar |
 | `incubadora/` | Lo personal que cada uno propone subir al equipo |
 | `.claude/rules/` | Reglas que Claude carga solo cuando toca ciertos ficheros |
 | `.claude-plugin/` | El catálogo (marketplace) desde el que se instalan los plugins |
