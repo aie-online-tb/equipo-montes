@@ -38,7 +38,8 @@ Comprobaciones automáticas que hacen cumplir estas reglas.
 | Plugin válido | GitHub Action en `equipo-montes` | Valida el marketplace y los plugins |
 | `.env` | Hook del plugin `aie-equipo`, en el Claude de cada uno | Impide leer o editar un `.env` |
 | Push a `main` o `develop`, push forzado y PR a `main` desde otra rama | Hook del plugin `aie-equipo` | Pide confirmación antes de hacerlo |
-| Protección de rama de `main` | Ajustes de GitHub, los pone una persona | Exige PR y check en verde |
+| Revisión de Claude | GitHub Action en `equipo-montes` | Comenta cada PR a `main` antes de que la revise la otra persona. No aprueba ni mergea. Se activa con [setup/revision-claude.md](../setup/revision-claude.md) |
+| Protección de rama de `main` | Ajustes de GitHub, los pone una persona | Exige PR y check en verde. Pendiente de confirmar que el plan de la organización lo permite en repos privados |
 
 Las guardas de los repos del bootcamp se añaden con su propia PR en cada repo.
 

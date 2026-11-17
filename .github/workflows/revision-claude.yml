@@ -1,0 +1,91 @@
+name: Revisión de Claude
+
+# Revisa cada PR de develop a main antes de que la revise la otra persona.
+# Usa la cuota del plan Claude de quien generó el token (setup/revision-claude.md).
+# Si el secreto no está configurado, el job termina en verde sin revisar.
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, ready_for_review, reopened]
+
+concurrency:
+  group: revision-claude-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  revisar:
+    name: Revisión de Claude
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - name: Comprobar que hay token
+        id: token
+        env:
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::notice::Falta el secreto CLAUDE_CODE_OAUTH_TOKEN. No se revisa. Ver setup/revision-claude.md"
+            echo "hay=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "hay=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.token.outputs.hay == 'si'
+        with:
+          fetch-depth: 0
+
+      - name: Revisar la PR
+        if: steps.token.outputs.hay == 'si'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR: ${{ github.event.pull_request.number }}
+            BASE: ${{ github.event.pull_request.base.ref }}
+            HEAD: ${{ github.event.pull_request.head.ref }}
+
+            Eres el revisor automático del repo equipo-montes: la memoria compartida y las
+            herramientas de Soraya y Hugo, equipo docente del bootcamp de AI Engineering de
+            The Bridge. Antes de revisar, lee CLAUDE.md, docs/reglas-git.md y specs/README.md.
+
+            Revisa solo el diff de esta PR (gh pr diff) y busca, por este orden:
+
+            1. Seguridad: claves, tokens, ficheros .env o datos personales de alumnos.
+               Si ves algo con forma de clave, di dónde está sin copiar el valor.
+            2. Reglas rotas: algo que contradiga docs/reglas-git.md, docs/roles-y-funciones.md,
+               docs/semana-tipo.md o docs/li-por-modulo.md, o una regla de Trello distinta de
+               la de CLAUDE.md (solo la rutina maestra escribe en Trello, y nunca mueve,
+               archiva ni borra sin OK de Hugo).
+            3. Rutinas (rutinas/*.md): instrucciones ambiguas, pasos que publiquen en Slack o
+               cambien el campus, cálculos de fechas o de sprint que fallen en un cambio de
+               semana, y huecos que harían que la rutina actúe dos veces.
+            4. Plugin (plugins/, .claude-plugin/): si cambia algo del plugin, plugin.json debe
+               subir su version; frontmatter válido en cada SKILL.md; hooks que puedan
+               bloquear o dejar pasar de más.
+            5. Coherencia: enlaces rotos entre ficheros del repo, nombres de rama
+               (feature/copy_from_material en OCT26), fechas y datos que no cuadren con docs/.
+            6. Texto de cara al alumno (plantillas/): que siga la skill normas-aie de
+               plugins/aie-equipo/skills/normas-aie/SKILL.md.
+
+            No comentes estilo ni gustos personales; las normas de estilo son un tema futuro
+            (spec 006). No propongas cambios grandes: esto es una release ya trabajada.
+
+            Cómo responder:
+            - Un comentario en línea por cada problema concreto, con la línea y la corrección.
+            - Al final, un único comentario general en la PR con: veredicto (Lista para
+              mergear / Revisar antes / No mergear), lista breve de problemas por gravedad y,
+              si no hay ninguno, dilo en una línea.
+            - Todo en español, directo y breve.
+            - Nunca apruebes, pidas cambios formales, hagas push ni mergees. Solo comentas:
+              la revisión y el merge son de la otra persona.
+          claude_args: |
+            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Glob,Grep"

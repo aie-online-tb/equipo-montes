@@ -15,3 +15,5 @@
 - [x] Carpeta `setup/` con pasos, scripts y prompts.
 - [x] `rutinas/revision-prs.md`: aviso de PRs a `main` por revisar.
 - [ ] Activar la rutina de PRs en la cuenta de Hugo y en la de Soraya.
+- [x] Workflows de revisión de Claude (`revision-claude.yml`) y de `@claude` (`claude.yml`), con `setup/revision-claude.md`.
+- [ ] Instalar la app de Claude en GitHub y guardar el secreto `CLAUDE_CODE_OAUTH_TOKEN` (Hugo).

@@ -20,6 +20,7 @@ Si algo de esta carpeta no funciona como dice, se corrige aquí por PR: es la ú
 | 5 | Comprobar los conectores | Abre Claude Code en la carpeta del repo y pega [prompts/comprobar-conectores.md](prompts/comprobar-conectores.md) | Cada uno |
 | 6 | Activar las rutinas | Sigue [prompts/activar-rutinas.md](prompts/activar-rutinas.md) | Cada uno su diaria; la maestra, solo Hugo |
 | 7 | Primera prueba | En Claude Code: «¿quién libera el sprint esta semana y cuándo?» | Cada uno |
+| 8 | Activar la revisión de Claude en GitHub | Sigue [revision-claude.md](revision-claude.md) | Solo Hugo, una vez |
 
 Los pasos 2 y 3 se pueden repetir sin miedo: si algo ya está hecho, lo dejan como está.
 
