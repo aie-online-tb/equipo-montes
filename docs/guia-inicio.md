@@ -73,7 +73,12 @@ claude plugin install aie-equipo@equipo-montes
 
 4. Lee la [constitución](../specs/000-constitucion/spec.md) y apunta lo que cambiarías.
 
-Para actualizar las skills más adelante: `claude plugin marketplace update equipo-montes`.
+Para actualizar las skills cuando haya una versión nueva en `main`:
+
+```bash
+claude plugin marketplace update equipo-montes
+claude plugin update aie-equipo@equipo-montes
+```
 
 Aviso: el plugin se instala en Claude Code. Si se puede usar tal cual desde la app de chat con el plan Pro está sin comprobar.
 

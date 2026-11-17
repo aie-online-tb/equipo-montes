@@ -1,0 +1,23 @@
+name: Validar marketplace y plugins
+
+on:
+  pull_request:
+  push:
+    branches: [main, develop]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validar el marketplace
+        run: npx -y @anthropic-ai/claude-code@2.1.317 plugin validate .
+      - name: Validar cada plugin
+        run: |
+          for p in plugins/*/; do
+            echo "Validando $p"
+            npx -y @anthropic-ai/claude-code@2.1.317 plugin validate "$p"
+          done

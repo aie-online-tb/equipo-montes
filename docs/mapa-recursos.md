@@ -20,6 +20,25 @@ Cuentas de Trello: Hugo es `hugomm_thebridge`. La cuenta que usa Soraya es `sora
 
 Los banners de sprint del calendario llevan el nombre del LI.
 
+## Seguimiento de alumnos
+
+| Recurso | Identificador | Notas |
+| --- | --- | --- |
+| Hoja «Informe de seguimientos IAE-ON-Octubre26» | Google Sheets, id `1DlOrdNId5yf-t-HgOMdimcjv_nBGM_NfuqnZeM7ECLk` | Pestañas clave: «Seguimientos» (columna «Seguimiento docente»), «Calificaciones AIE-26», «TC - GRUPOS», «PB1», «PB2», «Git de estudiantes» y «Evolución Alumnos» |
+
+Tiene datos personales de alumnos: se consulta, pero nunca se copia al repo.
+
+## Slack
+
+| Espacio | Canal | Notas |
+| --- | --- | --- |
+| The Bridge (equipo) | `#equipo-octubre-2026` | Público, equipo del intake |
+| The Bridge (equipo) | `#equipo_docente_octubre-2026` | Privado, equipo docente |
+| The Bridge Online (alumnos) | Por completar | Claude no tiene conector a este espacio: los nombres los pone una persona |
+| Por confirmar | Canal de Soraya, Hugo y Álex Cárabe | Por completar |
+
+Cada uno conecta un solo espacio de Slack a su Claude. El de alumnos no es visible para Claude.
+
 ## Repos (organización `aie-online-tb`)
 
 | Repo | Para qué |
@@ -39,8 +58,7 @@ Los banners de sprint del calendario llevan el nombre del LI.
 
 ## Por completar
 
-- Hoja de seguimiento de alumnos de OCT26.
-- Canales de Slack: alumnos de OCT26, equipo y el canal de los tres con Álex Cárabe.
+- Canales de Slack de alumnos y el canal de los tres con Álex Cárabe.
 - Carpeta de Drive de actas.
 - Deck, la plataforma de ejercicios online.
 - Curso de OCT26 en el campus.
