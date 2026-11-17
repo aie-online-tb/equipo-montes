@@ -46,17 +46,17 @@ Si se pide `--dry-run`, haz los pasos de comprobación y enseña el plan complet
 
 ### Puerta de revisión · el sprint N+1 está revisado
 
-Solo al copiar el sprint nuevo, y antes del Paso 0. Lo que se copia al repo de alumnos es lo que van a leer ellos, así que primero tiene que estar revisado. Quien imparte el sprint lo hace con la skill `preparar-sprint`; aquí solo se comprueba que está hecho. Pide a la persona los informes, o búscalos en su carpeta `Sprint_XX/preparacion_TA`:
+Solo al copiar el sprint nuevo, y antes del Paso 0. Lo que se copia al repo de alumnos es lo que van a leer ellos, así que primero tiene que estar revisado. Quien imparte el sprint lo hace con la skill `preparar-sprint`, en sus fases 0, 0b y 0c; aquí solo se comprueba que está hecho. Pide a la persona los informes, o búscalos en su carpeta `Sprint_XX/preparacion_TA`:
 
 | Fase de `preparar-sprint` | Qué prueba que está hecha |
 | --- | --- |
 | 0 · Análisis y versiones | Tabla de versiones y modelos del sprint. Si algo cambió respecto al sprint anterior, con la fuente oficial. Preguntas del análisis resueltas |
-| 3 · Revisión del material | `fase3_revision_material_practica.md` y `cambios_README_teoria.md`, sin hallazgos obligatorios abiertos |
-| 3b · Aplicar cambios | `cambios_aplicados_Sprint_XX.md` y los cambios ya aplicados en material (README y teoría con la tabla de modelos, sin marcas de revisión) |
+| 0b · Revisión del material | `fase3_revision_material_practica.md` y `cambios_README_teoria.md`, sin hallazgos obligatorios abiertos |
+| 0c · Aplicar cambios | `cambios_aplicados_Sprint_XX.md` y los cambios ya aplicados en material (README y teoría con la tabla de modelos, sin marcas de revisión) |
 
-Las fases 1, 2, 4 y 5 (slides, notas, caso práctico y PDF de enlaces) no bloquean la liberación: son para las sesiones y entran después, como piezas aparte.
+Las fases 1, 2a, 2b, 4 y 5 (slides, notas, mazo de notas, caso práctico y PDF de enlaces) no bloquean la liberación: son para las sesiones y entran después, como piezas aparte.
 
-- Si falta alguna prueba, **para**, dilo y ofrece lanzar `preparar-sprint` con las fases que faltan (para revisar, la 0, la 3 y la 3b).
+- Si falta alguna prueba, **para**, dilo y ofrece lanzar `preparar-sprint` con las fases que faltan (para revisar, la 0, la 0b y la 0c).
 - Solo se sigue sin ellas si la persona lo pide de forma explícita. Anótalo en Incidencias del informe, con quién lo decidió.
 
 ### Paso 0 · Comprobar el sprint N+1 en material
