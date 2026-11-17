@@ -46,7 +46,7 @@ Si se pide `--dry-run`, haz los pasos de comprobación y enseña el plan complet
 
 ### Puerta de revisión · el sprint N+1 está revisado
 
-Solo al copiar el sprint nuevo, y antes del Paso 0. Lo que se copia al repo de alumnos es lo que van a leer ellos, así que primero tiene que estar revisado. Quien imparte el sprint lo hace con la skill `preparar-sprint`; aquí solo se comprueba que está hecho. Pide a la persona los informes o búsca-los en su carpeta `Sprint_XX/preparacion_TA`:
+Solo al copiar el sprint nuevo, y antes del Paso 0. Lo que se copia al repo de alumnos es lo que van a leer ellos, así que primero tiene que estar revisado. Quien imparte el sprint lo hace con la skill `preparar-sprint`; aquí solo se comprueba que está hecho. Pide a la persona los informes, o búscalos en su carpeta `Sprint_XX/preparacion_TA`:
 
 | Fase de `preparar-sprint` | Qué prueba que está hecha |
 | --- | --- |
@@ -64,7 +64,7 @@ Las fases 1, 2, 4 y 5 (slides, notas, caso práctico y PDF de enlaces) no bloque
 - Localiza el módulo y la carpeta del sprint N+1. Desde el S05 la estructura es `<Modulo>/Sprint_XX/{01_Teoria/NN_Bloque/, 02_Workout/NN_Bloque/, Practica_live_review/, README.md, assets/}`.
 - Si falta `01_Teoria/`, `02_Workout/` o el `README.md`, para y avisa.
 - Las carpetas que terminan en « 2» son duplicados de Finder: no se copian nunca y se listan en Incidencias.
-- Busca en lo que se va a copiar marcas de revisión (✏️, ⚠️, ℹ️, 🤖), copias `_v2` y notebooks con salidas guardadas ajenas. Si hay alguna, no se copia: se lista en Incidencias.
+- Busca en lo que se va a copiar marcas de revisión (✏️, ⚠️, ℹ️, 🤖) y copias `_v2`. Si hay alguna, no se copia: se lista en Incidencias.
 
 ### Paso 1 · Soluciones del sprint N
 
