@@ -9,7 +9,7 @@ Dónde está cada cosa. Aquí van identificadores y enlaces, nunca claves ni tok
 | Trello, tablero «AI Engineering» | https://trello.com/b/iYb6W4J7/ai-engineering | Fuente de verdad de las tareas. Listas: Info, Brainstorming, Backlog, Sprint Planning, Current Sprint, In progress, Done, blocked |
 | Notion, espacio «The Bridge AIE» | https://app.notion.com/p/3e948b5deb6b81fe9e6ed4bd58c62195 | Base compartida: actas, alumnos, calendario, fechas de entrega |
 
-Cuentas de Trello: Hugo es `hugomm_thebridge`. La cuenta que usa Soraya es `sorayamalpicamontes1`; existe otra duplicada, `sorayamalpicamontes`, sin uso desde julio de 2026 y pendiente de quitar.
+Cuentas de Trello: Hugo es `hugomm_thebridge` (id de miembro `6a564e823f39b80b55665d98`). La cuenta que usa Soraya es `sorayamalpicamontes1` (id de miembro `6a9588ebd27c3031097fa9d1`); existe otra duplicada, `sorayamalpicamontes`, sin uso desde julio de 2026 y pendiente de quitar.
 
 ## Calendario
 
