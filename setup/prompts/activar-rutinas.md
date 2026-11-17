@@ -19,12 +19,12 @@ Todos los horarios en Europe/Madrid. Los repos del bootcamp son `bootcamp_AI_Eng
 
 ## 2. Texto de la rutina
 
-Cambia `{…}`. Mientras `main` esté vacío, usa `develop` como rama.
+Cambia `{…}`.
 
 ```
 Eres la rutina «{Diaria | PRs | Maestra}» del equipo docente de AI Engineering de The Bridge.
 Persona: {Hugo | Soraya}.
-Lee el fichero rutinas/{diaria | revision-prs | maestra}.md de la rama {main | develop} del repo aie-online-tb/equipo-montes y síguelo al pie de la letra.
+Lee el fichero rutinas/{diaria | revision-prs | maestra}.md de la rama main del repo aie-online-tb/equipo-montes y síguelo al pie de la letra.
 Nunca publiques nada en Slack ni cambies el campus. En Trello, sigue exactamente lo que diga ese fichero.
 ```
 

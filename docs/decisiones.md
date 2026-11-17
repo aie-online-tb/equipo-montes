@@ -4,6 +4,14 @@ Una línea por decisión, la más reciente arriba. Si una decisión cambia, no s
 
 | Fecha | Decisión | Quién |
 | --- | --- | --- |
+| 17/11/2026 | Tutorías: las atiende quien imparte el módulo correspondiente | Hugo y Soraya |
+| 17/11/2026 | Este repo lo mantienen los dos | Hugo y Soraya |
+| 17/11/2026 | Calendario del S08: apertura el 14/12, práctica el 15/12 y sesión de dudas de S06, S07 y S08 el 17/12, para que el S07 no se quede solo con teórica por el puente. Las fechas exactas se confirman en el calendario | Hugo y Soraya |
+| 17/11/2026 | Revisar el Deck de N+1 el viernes anterior, en vez del martes, y avisar a María de cualquier cambio | Hugo y Soraya |
+| 17/11/2026 | Una PR por tarea (apertura, soluciones, slides, taller, Team Challenge), no una sola release semanal | Hugo y Soraya |
+| 17/11/2026 | Prefijos de commits y PR: `release:` solo para abrir un sprint, `feat:` para añadir soluciones, slides o talleres, `fix:` para correcciones. `chore:` queda por estandarizar | Hugo y Soraya |
+| 17/11/2026 | Una PR de `develop` a `main` no se mergea sin la aprobación explícita de la otra persona, salvo que falte menos de una hora | Hugo y Soraya |
+| 17/11/2026 | Se deja de usar Notion. Trello, el calendario de Google, la hoja de seguimiento y este repo son las fuentes. Slack se mantiene conectado al espacio del claustro | Hugo y Soraya |
 | 16/11/2026 | Ramas: `main`, `develop` y ramas cortas con prefijo personal (`hugo/…`, `soraya/…`), sin rama personal fija | Hugo |
 | 16/11/2026 | Se deroga la regla de formato y marcas en los ficheros. La estandarización de estilo queda como tema futuro | Hugo |
 | 16/11/2026 | Se crea este repo, nuevo y privado, separado del de material, como punto común de trabajo con Claude | Hugo |
@@ -26,7 +34,8 @@ Una línea por decisión, la más reciente arriba. Si una decisión cambia, no s
 ## Abiertas
 
 - LI de M06 MLOps.
-- Puente del 7 y 8 de diciembre.
+- Proteger `main`: Hugo mira qué permite el plan gratuito de GitHub en repos privados; si no, Soraya busca el script que ya usó con alumnos.
+- Reflejar el cambio del S08 en el calendario OCT26 y en `li-por-modulo.md`: hoy el calendario sigue con la teórica del S08 el 10/12.
 - Tutorías: formato y horarios.
-- Quién mantiene este repo.
+- Estandarizar `chore:` y el resto de prefijos (Claude propone).
 - Estandarización de estilo y formato (spec 006).

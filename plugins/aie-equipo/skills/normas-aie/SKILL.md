@@ -22,6 +22,6 @@ description: Normas de redacción y de publicación del bootcamp de AI Engineeri
 ## Git en los repos del bootcamp
 
 - Nunca una PR a `main` que no venga de `develop`.
-- En los repos de alumnos el contenido entra por `feature/copy_from_material` (OCT26) o `feature_copy_from_material` (MAY26) y la release se titula «release: …».
+- En los repos de alumnos el contenido entra por `feature/copy_from_material` (OCT26) o `feature_copy_from_material` (MAY26) y la PR a `main` se titula «release: …» si abre un sprint o «feat: …» si añade soluciones, slides o talleres.
 - Las actas van por la rama `develop-actas` hacia `develop`.
 - Si una rama con un uso ya registrado va a sustituirse por otra, avisa y pide confirmación a una persona.

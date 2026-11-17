@@ -24,12 +24,10 @@ Si algo de esta carpeta no funciona como dice, se corrige aquí por PR: es la ú
 
 Los pasos 2 y 3 se pueden repetir sin miedo: si algo ya está hecho, lo dejan como está.
 
-## Mientras `main` esté vacío
+## Qué rama usar
 
-Hasta la primera release de `develop` a `main`:
-
-- `instalar.sh` instala el plugin desde tu copia local. Antes, haz `git checkout develop && git pull`.
-- Las rutinas leen sus instrucciones de `develop` en vez de `main`. El texto de [activar-rutinas.md](prompts/activar-rutinas.md) lo indica.
+- `instalar.sh` instala el plugin desde tu copia local. Antes, haz `git checkout main && git pull`: así tienes lo que los dos damos por bueno.
+- Las rutinas leen sus instrucciones de `main`. Un cambio en `rutinas/` no les llega hasta la siguiente release de `develop` a `main`.
 
 ## Actualizar
 

@@ -4,7 +4,7 @@ Estado: aprobada por Hugo el 17/11/2026.
 
 ## Qué
 
-Que cualquiera de los dos, desde su Claude y con su propia cuenta, pueda leer Trello, Slack, Notion, Google Calendar y las hojas del curso. Y que el repo diga dónde está cada recurso, para que Claude no tenga que preguntarlo.
+Que cualquiera de los dos, desde su Claude y con su propia cuenta, pueda leer Trello, Slack, Google Calendar y las hojas del curso. Y que el repo diga dónde está cada recurso, para que Claude no tenga que preguntarlo.
 
 ## Por qué
 
@@ -16,11 +16,11 @@ Dentro:
 - Completar `docs/mapa-recursos.md`: hoja de seguimiento de OCT26, canales de Slack (alumnos, equipo y el de los tres con Álex Cárabe), carpeta de actas en Drive, Deck y curso de OCT26 en el campus.
 - Una tabla por herramienta con qué hay que conectar, dónde se conecta (app de chat o Claude Code) y si está comprobado.
 - Declarar en el plugin los conectores que se puedan declarar, sin claves. El resto se documenta como paso manual.
-- Una regla común: leer libremente; escribir en Trello, Notion, Slack o el calendario solo con el OK de una persona.
+- Una regla común: leer libremente; escribir en Trello, Slack o el calendario solo con el OK de una persona.
 
 Fuera:
 - Automatizar nada con esos datos (specs 003 y 004).
-- Cambiar permisos o administradores en Trello, Slack o Notion.
+- Cambiar permisos o administradores en Trello o Slack.
 
 ## Criterios de aceptación
 

@@ -23,7 +23,7 @@ El cuándo lo decide quien la hace.
 | Tarea | Quién | Fecha límite |
 | --- | --- | --- |
 | Revisar el sprint N+1 y aplicar las correcciones al repo | Quien vaya a impartir N+1 | Martes a las 19:00 |
-| Revisar Deck de N+1 | TA | Martes |
+| Revisar Deck de N+1 | TA | Viernes anterior, para avisar a María de cualquier cambio con tiempo |
 | Sección del campus de N+1 preparada y oculta | TA | Martes |
 | Preparar la teórica de N+1: slides, notas y Kahoot si hace falta | Quien vaya a impartir N+1 | Miércoles |
 | Preparar el caso práctico de N | LI | Lunes |
@@ -31,6 +31,6 @@ El cuándo lo decide quien la hace.
 
 ## Continuas, sin día
 
-Seguimiento docente, dudas en Slack, correcciones, tutorías, Trello y Notion, y mantenimiento del material.
+Seguimiento docente, dudas en Slack, correcciones, tutorías, Trello, y mantenimiento del material.
 
 Cómo reparte cada uno su carga cuando es LI varias semanas seguidas queda a su criterio.

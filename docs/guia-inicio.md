@@ -112,7 +112,7 @@ El material de Soraya para preparar sprints ya está en `incubadora/soraya/prepa
 | --- | --- |
 | Saber qué tareas hay y de quién son | Trello |
 | Saber fechas, clases y quién es LI | Calendario OCT26 de Google |
-| Actas, alumnos y fechas de entrega | Notion |
+| Actas de sesión y fechas de entrega | Repo de alumnos (actas), calendario y hoja de seguimiento |
 | Avisar a alumnos o al equipo | Slack |
 | Saber cómo se hace algo o qué regla aplica | Este repo |
 
@@ -120,36 +120,39 @@ Los identificadores y enlaces están en [mapa-recursos.md](mapa-recursos.md). En
 
 ## 7. Qué está hecho y qué falta
 
-Estado a 17/11/2026. Todo está en `develop`; `main` sigue vacío hasta la primera release, que se hará cuando Soraya tenga acceso y lo revise.
+Estado a 17/11/2026, tras la reunión. `main` ya tiene la primera release (PR #17).
 
 | Pieza | Estado |
 | --- | --- |
-| Roles, funciones, semana tipo, LI por módulo, reglas de git y mapa de recursos | Hecho, pendiente de revisar con Soraya |
+| Roles, funciones, semana tipo, LI por módulo, reglas de git y mapa de recursos | Hecho y revisado con Soraya en la reunión |
 | Plugin `aie-equipo` con las skills `normas-aie`, `acta-sesion`, `preparar-sprint` y `liberar-sprint` | Hecho. `acta-sesion` y `preparar-sprint` salen del material de Soraya y necesitan su revisión |
 | Plantillas de mensajes: apertura, aviso de clase, cierre de semana y proyectos | Hecho |
 | Guardas: GitHub Actions en este repo y hook del plugin que bloquea los `.env` | Hecho |
-| Guardas en el repo de alumnos de OCT26 | En una PR a `develop` de ese repo |
+| Guardas en el repo de alumnos de OCT26 | Hecho, en `develop` de ese repo; llegan a `main` con la siguiente copia |
+| Acceso de Soraya a este repo | Hecho |
 | Rutinas: maestra (8:00, solo Hugo), diaria (9:00) y PRs (12:00 y 17:00) | Escritas y ensayadas en seco; sin activar |
-| Puesta en marcha (`setup/`) | Hecho; `instalar.sh` sin probar en un Mac |
+| Revisión de Claude en las PR a `main` | Workflows hechos; faltan la app de Claude en GitHub y el secreto ([setup/revision-claude.md](../setup/revision-claude.md)) |
+| Protección de `main` | Pendiente: Hugo mira el plan de GitHub; si no, el script de Soraya |
+| Puesta en marcha (`setup/`) | Hecho; `instalar.sh` sin probar en el ordenador de Soraya |
+| Notion | Cancelado; ya no se usa |
 | Estandarización de estilo (spec 006) | Tema futuro |
 
 Faltan datos: el id del curso de OCT26 en el campus, la carpeta de Drive de actas, el Deck, la cuenta de Google de OCT26 y las credenciales de Zoom de OCT26.
 
-## 8. Para la reunión del 17/11
+## 8. Después de la reunión del 17/11
 
-Para decidir juntos:
+Las decisiones están en [decisiones.md](decisiones.md). Lo que queda por hacer:
 
-- La constitución y la asignación de funciones.
-- La copia al repo de alumnos: seguir copiando por partes, como ahora, o una PR de release el martes. Y si el título de la PR a `main` empieza por «release:».
-- Si las PRs de copia a `main` de OCT26 deben avisar al otro para revisar, o solo para mirar después.
-- Cuándo activar las rutinas y si la cuenta Pro de Soraya admite tareas programadas.
-- LI de M06 y puente del 7 y 8 de diciembre.
-- Tutorías: propuesta de horarios.
-- Hoja de seguimiento de OCT26.
-- Quién mantiene este repo.
-- Trello: quitar la cuenta duplicada de Soraya, relevar a Alejandro Reyes como administrador del tablero y archivar lo que lleva tiempo en Done.
-
-Para hacer después de la reunión:
-
-- Dar a Soraya acceso al repo, que siga `setup/` y revise las skills que salen de su material.
-- Primera release de `develop` a `main`, con revisión de Soraya.
+| Quién | Tarea |
+| --- | --- |
+| Hugo | Mirar qué permite el plan gratuito de GitHub para proteger `main` |
+| Hugo | Instalar la app de Claude en GitHub y guardar el secreto de la revisión ([setup/revision-claude.md](../setup/revision-claude.md)) |
+| Hugo | Completar en el mapa de recursos las cuentas de OCT26 (Google, Zoom, campus) |
+| Hugo | Activar la maestra y su diaria y su rutina de PRs |
+| Hugo | Copiar y liberar el S05 al repo de alumnos |
+| Soraya | Seguir `setup/`: conectar, clonar, revisar las skills y activar su diaria y su rutina de PRs |
+| Soraya | Comprobar que su plan de Claude permite tareas programadas |
+| Soraya | Subir el taller de entornos virtuales al repo de alumnos (a 17/11 no está ni en `feature/copy_from_material` ni en `main`) |
+| Soraya | Revisar Moodle y lanzar el prompt de enlaces de la fase 5 del sprint |
+| Soraya | Buscar el script para proteger `main` |
+| Los dos | Weekly de seguimiento el lunes 23/11 a las 16:00 para ajustar lo anterior |
