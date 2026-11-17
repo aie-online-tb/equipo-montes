@@ -21,17 +21,19 @@ La semana tipo está escrita, pero los roles cambian con el módulo y las funcio
 
 ## Decisiones
 
-- **Una rutina diaria igual para los dos.** Cada mañana averigua quién es LI esa semana y da a cada uno solo lo suyo. En un relevo no hay que tocar nada.
-- **Una sola rutina de Trello, en la cuenta de Hugo.** Si la tuvieran los dos, saldrían tarjetas duplicadas. Además, asignar personas solo funciona con la API de Trello desde el entorno de Hugo.
-- **La rutina de Trello crea tarjetas sola** (decisión de Hugo, 17/11/2026). Mover, archivar o borrar sigue necesitando el OK de una persona.
+- **Una rutina maestra que escribe y una diaria por persona que lee** (decisión de Hugo, 17/11/2026). La maestra, a las 8:00 en la cuenta de Hugo, hace todo lo que se puede hacer sin publicar y lo deja en Trello. La diaria de cada uno, a las 9:00, solo lo resume.
+- **Solo la maestra escribe en Trello.** Si escribieran las dos cuentas, saldrían tarjetas duplicadas. Además, asignar personas solo funciona con la API de Trello desde el entorno de Hugo. La cuenta de Soraya puede escribir en Trello con el conector; lo que lo impide en sus rutinas es esta regla, no un permiso.
+- **La maestra crea tarjetas y comenta sin pedir OK** (decisión de Hugo, 17/11/2026). Mover, archivar, borrar o marcar como hecha sigue necesitando el OK de una persona.
+- **La diaria calcula el rol cada mañana.** En un relevo no hay que tocar nada.
+- **Los datos de alumnos no van a Trello.** La diaria los lee directamente de la hoja de seguimiento.
 - **Ninguna rutina publica nada.** Avisan y dejan borradores; publicar es cosa de una persona.
 - **Instrucciones en el repo, no en la rutina.** La rutina solo dice qué fichero de `rutinas/` seguir. Así se cambian por PR y no se pagan miles de caracteres en cada ejecución.
 
 ## Alcance
 
 Dentro:
+- `rutinas/maestra.md`: solo en la cuenta de Hugo, de lunes a viernes a las 8:00.
 - `rutinas/diaria.md`: una por persona, de lunes a viernes a las 9:00.
-- `rutinas/trello.md`: solo en la cuenta de Hugo, los miércoles a las 8:30.
 - Guardas de `equipo-montes` y del plugin (hechas) y del repo de alumnos de OCT26 (pendientes del OK de Hugo).
 
 Fuera:
@@ -41,7 +43,8 @@ Fuera:
 ## Criterios de aceptación
 
 - Durante dos semanas seguidas, una de ellas con relevo, ningún aviso ni ninguna tarjeta va a la persona equivocada.
-- La rutina de Trello no crea duplicados aunque se ejecute dos veces la misma semana.
+- La maestra no crea duplicados aunque se ejecute varias veces la misma semana.
+- Los borradores de apertura y de cierre están en su tarjeta antes de las 9:00 del día que tocan.
 - Cada aviso diario cabe en una pantalla de móvil.
 - Desactivar la rutina de uno no afecta a la del otro.
 
