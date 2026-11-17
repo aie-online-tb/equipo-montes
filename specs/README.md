@@ -18,9 +18,9 @@ Orden de implementación propuesto: 001, 002 y 003 en paralelo; después 005 y 0
 | N.º | Spec | Estado |
 | --- | --- | --- |
 | 000 | Constitución: principios, roles, capas y reglas | Borrador, pendiente de Soraya |
-| 001 | Estructura del repo y del plugin | Borrador |
-| 002 | Mapa de recursos y conectores (Trello, Slack, Notion, Calendar) | Borrador |
-| 003 | Skills iniciales: preparar sprint, liberar sprint y actas | Borrador |
-| 004 | Recordatorios de la semana tipo por rol | Borrador |
-| 005 | Archivo de mensajes de Slack | Borrador |
+| 001 | Estructura del repo y del plugin | En curso |
+| 002 | Mapa de recursos y conectores (Trello, Slack, Notion, Calendar) | Aprobada |
+| 003 | Skills iniciales: preparar sprint, liberar sprint y actas | Aprobada |
+| 004 | Recordatorios de la semana tipo por rol | Aprobada |
+| 005 | Archivo de mensajes de Slack | Aprobada |
 | 006 | Estandarización de estilo y formato | Tema futuro |
