@@ -1,11 +1,11 @@
 ---
 name: preparar-sprint
-description: Prepara un sprint del bootcamp AI Engineering de The Bridge por fases, para quien lo va a impartir. Las fases son análisis del material, slides y notas de la teórica, revisión y corrección del material, caso práctico y PDF de enlaces para profundizar. Úsala cuando pidan «preparar el sprint», «preparar la teórica», «revisar el sprint antes de liberarlo», «preparar el caso práctico» o «el PDF de enlaces» de un sprint.
+description: Prepara un sprint del bootcamp AI Engineering de The Bridge por fases, para quien lo va a impartir. Las fases son análisis del material, revisión y corrección del material, slides y notas de la teórica, caso práctico y PDF de enlaces para profundizar. Úsala cuando pidan «preparar el sprint», «preparar la teórica», «revisar el sprint antes de liberarlo», «preparar el caso práctico» o «el PDF de enlaces» de un sprint.
 ---
 
 # preparar-sprint
 
-Basada en el prompt maestro v2 de Soraya. Sus reglas y sus fases están en `referencia/` sin cambios. Esta skill solo añade cómo arrancar y de dónde sale cada dato.
+Basada en el prompt maestro v2 de Soraya. Sus reglas y sus fases están en `referencia/`. Único cambio respecto al original: la revisión del material pasa a ser las fases 0b y 0c, justo después del análisis (decisión de Hugo, 17/11/2026). Esta skill solo añade cómo arrancar y de dónde sale cada dato.
 
 Cubre las funciones que siguen al sprint: preparar la teórica (7), preparar el caso práctico (8), el PDF de enlaces (10) y revisar el sprint y aplicar las correcciones (11). Las hace **quien vaya a impartir el sprint**, aunque esa semana sea TA. Los plazos están en `docs/semana-tipo.md` del repo `equipo-montes`: la revisión vence el martes a las 19:00 y la teórica, el miércoles.
 
@@ -30,20 +30,20 @@ Cubre las funciones que siguen al sprint: preparar la teórica (7), preparar el 
 
 ## Fases
 
-Están en `referencia/fases.md`. Van en orden y, al terminar cada una, se resume en 5 líneas como máximo y se espera el OK de la persona antes de seguir:
+Están en `referencia/fases.md`. Van en este orden y, al terminar cada una, se resume en 5 líneas como máximo y se espera el OK de la persona antes de seguir:
 
 | Fase | Qué sale |
 | --- | --- |
 | 0 · Análisis | Preguntas, mapa de conceptos, agenda, opciones de hilo conductor y revisión de modelos |
+| 0b · Revisión del material | Informes de hallazgos, cambios en los README y tabla de modelos |
+| 0c · Aplicar cambios | Copias `_v2` y el informe de cambios aplicados |
 | 1 · Slides | Slides de la teórica, como artifact |
 | 2a · Notas del profesor | `.md` con guion slide a slide |
 | 2b · Mazo de notas | Para la segunda pantalla, solo cuando la persona devuelva sus slides editadas |
-| 3 · Revisión del material | Informes de hallazgos, cambios en los README y tabla de modelos |
-| 3b · Aplicar cambios | Copias `_v2` y el informe de cambios aplicados |
 | 4 · Caso práctico | Reparto de ejercicios y notebooks del profesor y del alumno |
 | 5 · Referencias | `referencias_sprintXX.md` y `Enlaces_para_profundizar_SprintXX.pdf` |
 
-Si la persona solo pide una parte (por ejemplo, «revisa el sprint»), haz solo las fases que tocan: para revisar, la 0 y la 3.
+Las fases 0, 0b y 0c son la revisión previa a liberar el sprint: `liberar-sprint` las exige antes de copiar el sprint nuevo. Si la persona solo pide una parte (por ejemplo, «revisa el sprint»), haz solo las fases que tocan: para revisar, la 0, la 0b y la 0c.
 
 ## Límites
 

@@ -1,6 +1,6 @@
 # Fases de preparación del sprint
 
-Texto del prompt maestro v2 de Soraya, sin cambios.
+Texto del prompt maestro v2 de Soraya. Único cambio, decidido por Hugo el 17/11/2026: la revisión del material (antes Fase 3) y la aplicación de cambios (antes Fase 3b) pasan a ser las fases **0b** y **0c** y van justo después del análisis, porque el sprint tiene que estar revisado antes de liberarse. El orden es 0, 0b, 0c, 1, 2a, 2b, 4 y 5. El original, sin tocar, está en `incubadora/soraya/preparar-sprint/`.
 
 ## Fase 0 · Análisis (antes de producir nada)
 1. **Lee todo el zip.** Hazme las preguntas que necesites sobre alcance, hilo conductor, reparto y dudas del material.
@@ -13,6 +13,27 @@ Texto del prompt maestro v2 de Soraya, sin cambios.
    - **Si hay cambios** (un modelo retirado, una versión nueva del SDK que rompe algo, un cambio en la capa gratuita…), dime cuál, cita la fuente oficial y propón la tabla actualizada. Cita solo la página oficial, como la de precios para la capa gratuita, y pon el recomendado a modo de ejemplo.
    - Comprueba de verdad que el modelo de ejemplo responde. Si da error (404, 503…), dímelo con el texto del error.
 5. **Red:** comprueba a qué webs y APIs del material llegas desde tu entorno. Lo que no puedas verificar, lo ejecutaré yo en mi ordenador.
+
+## Fase 0b · Revisión del material de práctica y de la teoría
+1. **Ejecuta** las soluciones de `Practica_live_review`, `03_Material_de_Practica` y los workouts, como dice la regla 3.
+2. **`fase3_revision_material_practica.md`:** un informe con un **código por hallazgo** (por ejemplo, C1, G2, 11-A). Para cada uno: el archivo y la celda, qué pasa (con la salida real), cómo arreglarlo y si es obligatorio u opcional. El fichero conserva este nombre aunque la fase ahora sea la 0b.
+3. **`cambios_README_teoria.md`:** las ambigüedades y errores que tengo que corregir de cara a los alumnos. Para cada uno: **qué modificar y en qué parte está** (archivo, apartado y texto actual → texto propuesto).
+4. **`modelos_[[…]]_alumnos.md`** (regla de versiones): la tabla de versiones y modelos, **con el mismo formato en todos los sprints**, para pegarla en el README del sprint.
+   - **Si no ha cambiado nada**, reutiliza la del sprint anterior y mantén el mismo modelo de ejemplo en teoría y ejercicios.
+   - **Si ha cambiado algo**, actualízala, cita la fuente oficial y lista en `cambios_README_teoria.md` cada sitio del material donde haya que cambiar el modelo o la versión.
+
+## Fase 0c · Aplicar los cambios para subirlos al repo
+Basándote en los informes de la Fase 0b que yo te valide:
+- **Notebooks (`.ipynb`):** no se tocan los originales. Crea una copia `_v2`:
+  - una celda inicial que resume los cambios;
+  - en mis copias de trabajo, cada celda cambiada o nueva lleva su marca (regla 9).
+  - Guarda las copias sin salidas.
+  - Comprueba que pasan la validación de `nbformat` y que el código compila.
+- **Textos (`.md`, `.py`, `.html`, README):** se editan directamente, sin marcas ni iconos y con el formato original (regla 10).
+- **Incluye** la carpeta `Practica_live_review` y los README. Los `_SOLUTION` solo si te lo pido (regla 8).
+- **`cambios_aplicados_Sprint_XX.md`:** el informe de lo que has cambiado. Para cada cambio: el archivo, el código del informe y en qué consiste. Lista también lo que no has cambiado a propósito y por qué.
+- **Ejecución en mi ordenador:** prepárame un script para ejecutar ahí los `_v2` que necesiten red o claves, y revisa el resultado cuando te lo pase.
+- **Cuando lo aplique en el repo**, la versión que va al repo no lleva marcas.
 
 ## Fase 1 · Slides de la sesión de teoría
 - **Formato:** página web publicada como artifact, con el mismo estilo que la plantilla.
@@ -75,27 +96,6 @@ Texto del prompt maestro v2 de Soraya, sin cambios.
 - **Pie de página:** el bloque, los minutos y los puntos de control, ya con la numeración nueva.
 - **Erratas:** corrígelas. Los cambios de contenido (algo incorrecto) avísamelos uno a uno.
 - **Lista de desajustes:** dime qué quité de las slides pero sigue en las notas, y qué partes de las notas o de la agenda usan todavía la numeración antigua. **No toques mis slides.**
-
-## Fase 3 · Revisión del material de práctica y de la teoría
-1. **Ejecuta** las soluciones de `Practica_live_review`, `03_Material_de_Practica` y los workouts, como dice la regla 3.
-2. **`fase3_revision_material_practica.md`:** un informe con un **código por hallazgo** (por ejemplo, C1, G2, 11-A). Para cada uno: el archivo y la celda, qué pasa (con la salida real), cómo arreglarlo y si es obligatorio u opcional.
-3. **`cambios_README_teoria.md`:** las ambigüedades y errores que tengo que corregir de cara a los alumnos. Para cada uno: **qué modificar y en qué parte está** (archivo, apartado y texto actual → texto propuesto).
-4. **`modelos_[[…]]_alumnos.md`** (regla de versiones): la tabla de versiones y modelos, **con el mismo formato en todos los sprints**, para pegarla en el README del sprint.
-   - **Si no ha cambiado nada**, reutiliza la del sprint anterior y mantén el mismo modelo de ejemplo en teoría y ejercicios.
-   - **Si ha cambiado algo**, actualízala, cita la fuente oficial y lista en `cambios_README_teoria.md` cada sitio del material donde haya que cambiar el modelo o la versión.
-
-## Fase 3b · Aplicar los cambios para subirlos al repo
-Basándote en los informes de la Fase 3 que yo te valide:
-- **Notebooks (`.ipynb`):** no se tocan los originales. Crea una copia `_v2`:
-  - una celda inicial que resume los cambios;
-  - en mis copias de trabajo, cada celda cambiada o nueva lleva su marca (regla 9).
-  - Guarda las copias sin salidas.
-  - Comprueba que pasan la validación de `nbformat` y que el código compila.
-- **Textos (`.md`, `.py`, `.html`, README):** se editan directamente, sin marcas ni iconos y con el formato original (regla 10).
-- **Incluye** la carpeta `Practica_live_review` y los README. Los `_SOLUTION` solo si te lo pido (regla 8).
-- **`cambios_aplicados_Sprint_XX.md`:** el informe de lo que has cambiado. Para cada cambio: el archivo, el código del informe y en qué consiste. Lista también lo que no has cambiado a propósito y por qué.
-- **Ejecución en mi ordenador:** prepárame un script para ejecutar ahí los `_v2` que necesiten red o claves, y revisa el resultado cuando te lo pase.
-- **Cuando lo aplique en el repo**, la versión que va al repo no lleva marcas.
 
 ## Fase 4 · Caso práctico ([[N]] sesión(es))
 1. **Reparto de los ejercicios de `Practica_live_review`** entre las sesiones:

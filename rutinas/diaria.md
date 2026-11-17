@@ -2,7 +2,9 @@
 
 De lunes a viernes a las 9:00, en la cuenta de cada uno. Da a la persona solo lo que le toca hoy según su rol.
 
-Solo lee. Lo que se puede hacer sin publicar ya lo ha hecho la [rutina maestra](maestra.md) a las 8:00 y está en Trello: la diaria lo resume.
+Es el **único aviso diario**: la persona no recibe nada más por la mañana. Llega siempre al mismo hilo, «Avisos». Por eso no repite ni resume los avisos de días anteriores: cada día es independiente y empieza leyendo de nuevo los ficheros de `main`.
+
+Solo lee. Lo que se puede hacer sin publicar ya lo ha hecho la [rutina maestra](maestra.md) a las 8:00 y está en Trello: la diaria lo resume. La maestra no avisa por su cuenta: si falla, lo dice esta rutina.
 
 Conectores: GitHub (este repo y los del bootcamp, lectura), Google Calendar, Trello y Google Sheets. Trello y Sheets, solo para leer.
 
@@ -45,9 +47,47 @@ Propón archivar, sin archivar nada:
 - si la persona es Hugo y la tarjeta `[Trello] ¿Archivar N tarjetas de Done?` de la maestra sigue sin su OK, una línea con el número y el enlace;
 - las pendientes que parezcan caducadas: de MAY26, de sprints ya liberados o sin movimiento en 30 días. Para estas, el nombre y el motivo.
 
-## 5. Formato del aviso
+## 5. Skills y recursos que ya existen
+
+Mira las tareas de «Hoy» y «Vence pronto» y busca cada una en esta tabla. Los recursos que salgan, sin repetir, no van al lado de cada tarea: salen juntos al final, en una tarjeta de opciones (apartado 6).
+
+| Tarea (n.º en `roles-y-funciones.md`) | Recurso | Para quién |
+| --- | --- | --- |
+| Revisar el sprint, preparar la teórica, el caso práctico o el PDF de enlaces (7, 8, 10, 11) | skill `preparar-sprint` | Quien imparte el sprint |
+| Liberar el sprint, copia al repo de alumnos, campus (14, 15) | skill `liberar-sprint` | TA |
+| Mensaje de apertura del sprint (16) | plantilla `apertura-sprint` (`plantillas/mensajes/`) | TA |
+| Mensaje de cierre de semana (17) | plantilla `cierre-semana` (`plantillas/mensajes/`) | TA |
+| Mensajes de aviso de clases, MC y talleres (18) | plantilla `aviso-clase` (`plantillas/mensajes/`) | TA |
+| Mensaje de proyectos (PB, TC) | plantilla `proyectos` (`plantillas/mensajes/`) | TA |
+| Acta de una sesión (20) | skill `acta-sesion` | TA |
+| Cualquier texto de cara al alumno | skill `normas-aie` | Los dos |
+| Kahoot de una LR (9) | skill personal `kahoot` | Solo Hugo |
+| Subir y comprobar una grabación (19) | skill personal `subir-video` | Solo Hugo |
+
+- Solo ofrece lo que está en la tabla. Si una tarea no tiene recurso, no digas nada: no inventes skills.
+- Las skills personales se ofrecen solo a su dueño. A la otra persona no se le nombran.
+- Si un recurso no existe en el repo o en la cuenta de la persona, no lo ofrezcas.
+- No pongas enlaces a GitHub a los recursos: a la persona no le sirve abrir el fichero, quiere lanzarlo.
+
+## 6. Formato del aviso
+
+Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo**, sin contar el título. Lo demás, como «y N más», con el enlace al tablero.
 
 - Título: `Diaria · {día} {fecha} · {LI | TA} · Sprint {N}`.
-- Bloques, en este orden: «PRs por revisar» (solo si hay alguna), «Hoy», «Próximos dos días» y «Trello». Viñetas cortas, con hora y enlace.
-- Que quepa en una pantalla de móvil. Si hay más, lo más urgente primero y el resto como «y N más».
+- Tres bloques, en este orden:
+  1. **Hoy**: las clases y tareas del día con su hora. Aquí va también lo del lunes.
+  2. **Vence pronto**: tarjetas vencidas o que vencen en los próximos dos días, con fecha y enlace. Si hay tarjetas sin fecha, una sola línea con el número.
+  3. **Decide tú**: lo que espera una decisión de la persona. Las PRs por revisar, la tarjeta de archivar Done sin OK, las propuestas de archivar tarjetas caducadas y los avisos de la maestra (un fallo o un comentario de aviso). Si no hay nada, el bloque no sale.
+- **Una tarea, una viñeta**, de una línea y con hora o enlace. No juntes dos tareas en la misma viñeta ni dejes frases sueltas al final de una (por ejemplo «Teórica del S05 y Kahoot»: eso va en la tarjeta de skills, no en el texto).
+- Si la maestra no ha dejado su comentario un día de trabajo, es la primera línea de «Decide tú».
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.
+
+### Tarjeta de skills recomendadas
+
+Justo después del mensaje, y solo si hay recursos del apartado 5 para lo de hoy, publica una tarjeta de opciones en el mismo hilo (la herramienta `request_decision`, la misma que se usa para preguntar con opciones):
+- Pregunta: «¿Lanzo alguna de las skills recomendadas?».
+- Una opción por recurso, máximo cuatro. Etiqueta: el nombre del recurso (`preparar-sprint`). Consecuencia: una frase con lo que haría hoy («Prepara la teórica del S05»).
+- Recomendada: la de la tarea más cercana en el tiempo.
+- Al publicarla, **no lances nada ni sigas trabajando en ello**: termina. Solo se ejecuta si la persona pulsa una opción.
+- Cuando la persona pulse una, ejecuta ese recurso en este hilo siguiendo su fichero (`plugins/aie-equipo/skills/{nombre}/SKILL.md` o la plantilla de `plantillas/mensajes/`). Para una plantilla, deja el borrador en el hilo para que la persona lo revise; no lo publiques en ningún sitio. Para cualquier acción hacia fuera (Slack, campus, Trello, PR), pide antes el OK de la persona, como siempre.
+- Si la herramienta de tarjetas no está disponible, termina el mensaje con una última línea, sola, sin enlaces: `Skills recomendadas: preparar-sprint, kahoot`.
