@@ -26,6 +26,8 @@ claude plugin install aie-equipo@equipo-montes
 | `rutinas/` | El texto de cada tarea programada, para activarla en la cuenta de quien toque |
 | `incubadora/` | Lo personal que cada uno propone subir al equipo |
 | `.claude/rules/` | Reglas que Claude carga solo cuando toca ciertos ficheros |
+| `.claude-plugin/` | El catálogo (marketplace) desde el que se instalan los plugins |
+| `.github/` | La comprobación automática de cada PR y la plantilla de PR |
 
 ## Cómo se contribuye
 

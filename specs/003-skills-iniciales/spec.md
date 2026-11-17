@@ -1,6 +1,6 @@
 # 003 · Skills iniciales
 
-Estado: borrador del 17/11/2026, pendiente de aprobar.
+Estado: aprobada por Hugo el 17/11/2026.
 
 ## Qué
 

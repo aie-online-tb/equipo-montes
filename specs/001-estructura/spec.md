@@ -1,6 +1,6 @@
 # 001 · Estructura del repo y del plugin
 
-Estado: borrador del 17/11/2026, pendiente de aprobar.
+Estado: aprobada por Hugo el 17/11/2026.
 
 ## Qué
 

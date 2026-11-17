@@ -20,6 +20,11 @@ Nota: en git no pueden existir a la vez una rama `hugo` y ramas `hugo/algo`. Por
 6. Si una rama con un uso ya registrado va a sustituirse por otra con otro nombre, antes se avisa y se pide confirmación a una persona.
 7. Commits y PR pequeños.
 
+## Versión del plugin
+
+- Cada PR de `develop` a `main` que cambie un plugin sube su `version` en `plugin.json`: el último número para arreglos, el del medio para skills nuevas y el primero para cambios que obliguen a reinstalar.
+- Cada PR pasa un check automático que valida el marketplace y los plugins. Si sale en rojo, no se mergea.
+
 Las normas de estilo y formato no forman parte de estas reglas. Su estandarización queda como tema futuro (spec 006).
 
 ## Ramas con uso registrado en otros repos
