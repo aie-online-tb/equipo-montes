@@ -49,28 +49,29 @@ Propón archivar, sin archivar nada:
 
 ## 5. Skills y recursos que ya existen
 
-Mira las tareas de «Hoy» y «Vence pronto» y busca cada una en esta tabla. Los recursos que salgan, sin repetir, van todos juntos en la **última línea** del mensaje (apartado 6), no al lado de cada tarea. Cada uno es un **enlace** a su fichero en `main` (así se abre con un clic); las skills personales no tienen enlace y van como texto.
+Mira las tareas de «Hoy» y «Vence pronto» y busca cada una en esta tabla. Los recursos que salgan, sin repetir, no van al lado de cada tarea: salen juntos al final, en una tarjeta de opciones (apartado 6).
 
-| Tarea (n.º en `roles-y-funciones.md`) | Recurso y enlace | Para quién |
+| Tarea (n.º en `roles-y-funciones.md`) | Recurso | Para quién |
 | --- | --- | --- |
-| Revisar el sprint, preparar la teórica, el caso práctico o el PDF de enlaces (7, 8, 10, 11) | `preparar-sprint` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plugins/aie-equipo/skills/preparar-sprint/SKILL.md` | Quien imparte el sprint |
-| Liberar el sprint, copia al repo de alumnos, campus (14, 15) | `liberar-sprint` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plugins/aie-equipo/skills/liberar-sprint/SKILL.md` | TA |
-| Mensaje de apertura del sprint (16) | `apertura-sprint` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plantillas/mensajes/apertura-sprint.md` | TA |
-| Mensaje de cierre de semana (17) | `cierre-semana` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plantillas/mensajes/cierre-semana.md` | TA |
-| Mensajes de aviso de clases, MC y talleres (18) | `aviso-clase` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plantillas/mensajes/aviso-clase.md` | TA |
-| Mensaje de proyectos (PB, TC) | `proyectos` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plantillas/mensajes/proyectos.md` | TA |
-| Acta de una sesión (20) | `acta-sesion` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plugins/aie-equipo/skills/acta-sesion/SKILL.md` | TA |
-| Cualquier texto de cara al alumno | `normas-aie` → `https://github.com/aie-online-tb/equipo-montes/blob/main/plugins/aie-equipo/skills/normas-aie/SKILL.md` | Los dos |
-| Kahoot de una LR (9) | `kahoot` (skill personal, sin enlace) | Solo Hugo |
-| Subir y comprobar una grabación (19) | `subir-video` (skill personal, sin enlace) | Solo Hugo |
+| Revisar el sprint, preparar la teórica, el caso práctico o el PDF de enlaces (7, 8, 10, 11) | skill `preparar-sprint` | Quien imparte el sprint |
+| Liberar el sprint, copia al repo de alumnos, campus (14, 15) | skill `liberar-sprint` | TA |
+| Mensaje de apertura del sprint (16) | plantilla `apertura-sprint` (`plantillas/mensajes/`) | TA |
+| Mensaje de cierre de semana (17) | plantilla `cierre-semana` (`plantillas/mensajes/`) | TA |
+| Mensajes de aviso de clases, MC y talleres (18) | plantilla `aviso-clase` (`plantillas/mensajes/`) | TA |
+| Mensaje de proyectos (PB, TC) | plantilla `proyectos` (`plantillas/mensajes/`) | TA |
+| Acta de una sesión (20) | skill `acta-sesion` | TA |
+| Cualquier texto de cara al alumno | skill `normas-aie` | Los dos |
+| Kahoot de una LR (9) | skill personal `kahoot` | Solo Hugo |
+| Subir y comprobar una grabación (19) | skill personal `subir-video` | Solo Hugo |
 
 - Solo ofrece lo que está en la tabla. Si una tarea no tiene recurso, no digas nada: no inventes skills.
 - Las skills personales se ofrecen solo a su dueño. A la otra persona no se le nombran.
 - Si un recurso no existe en el repo o en la cuenta de la persona, no lo ofrezcas.
+- No pongas enlaces a GitHub a los recursos: a la persona no le sirve abrir el fichero, quiere lanzarlo.
 
 ## 6. Formato del aviso
 
-Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo**, sin contar el título ni la última línea. Lo demás, como «y N más», con el enlace al tablero.
+Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo**, sin contar el título. Lo demás, como «y N más», con el enlace al tablero.
 
 - Título: `Diaria · {día} {fecha} · {LI | TA} · Sprint {N}`.
 - Tres bloques, en este orden:
@@ -79,5 +80,14 @@ Un solo mensaje que se lea de un vistazo en el móvil: **12 líneas como máximo
   3. **Decide tú**: lo que espera una decisión de la persona. Las PRs por revisar, la tarjeta de archivar Done sin OK, las propuestas de archivar tarjetas caducadas y los avisos de la maestra (un fallo o un comentario de aviso). Si no hay nada, el bloque no sale.
 - Viñetas de una línea, con hora y enlace.
 - Si la maestra no ha dejado su comentario un día de trabajo, es la primera línea de «Decide tú».
-- **Última línea, sola:** `Skills recomendadas:` seguida de los recursos del apartado 5 que correspondan a lo de hoy, separados por comas, máximo cuatro. Cada uno va como enlace en markdown, con el nombre como texto: `Skills recomendadas: [preparar-sprint](url), [liberar-sprint](url)`. Las skills personales, solo el nombre. Si no hay ninguno, la línea no sale.
 - Nunca nombres ni datos personales de alumnos más allá del nombre y los días sin actividad.
+
+### Tarjeta de skills recomendadas
+
+Justo después del mensaje, y solo si hay recursos del apartado 5 para lo de hoy, publica una tarjeta de opciones en el mismo hilo (la herramienta `request_decision`, la misma que se usa para preguntar con opciones):
+- Pregunta: «¿Lanzo alguna de las skills recomendadas?».
+- Una opción por recurso, máximo cuatro. Etiqueta: el nombre del recurso (`preparar-sprint`). Consecuencia: una frase con lo que haría hoy («Prepara la teórica del S05»).
+- Recomendada: la de la tarea más cercana en el tiempo.
+- Al publicarla, **no lances nada ni sigas trabajando en ello**: termina. Solo se ejecuta si la persona pulsa una opción.
+- Cuando la persona pulse una, ejecuta ese recurso en este hilo siguiendo su fichero (`plugins/aie-equipo/skills/{nombre}/SKILL.md` o la plantilla de `plantillas/mensajes/`). Para una plantilla, deja el borrador en el hilo para que la persona lo revise; no lo publiques en ningún sitio. Para cualquier acción hacia fuera (Slack, campus, Trello, PR), pide antes el OK de la persona, como siempre.
+- Si la herramienta de tarjetas no está disponible, termina el mensaje con una última línea, sola, sin enlaces: `Skills recomendadas: preparar-sprint, kahoot`.
