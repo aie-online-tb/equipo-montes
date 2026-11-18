@@ -6,7 +6,7 @@ Es la versión automática de [setup/README.md](README.md). Los pasos a mano sig
 
 ## Cómo usarlo
 
-1. En Claude desktop, abre el proyecto del equipo (o crea uno nuevo con acceso a los repos `equipo-montes`, `bootcamp_AI_Engineering_10_26`, `material_bootcamp_AI_Engineering` y `workouts_AIE_permanente`).
+1. En Claude desktop, abre el proyecto del equipo (o crea uno nuevo con acceso a los repos `equipo-montes`, `bootcamp_AI_Engineering_10_26`, y `material_bootcamp_AI_Engineering`).
 2. Pega el bloque de abajo en el chat del proyecto.
 3. Contesta a lo que te pida y haz lo que no pueda hacer por ti (iniciar sesión, activar un conector, aceptar un permiso). Normalmente son pocos clics.
 4. Termina cuando Claude te enseñe la tabla final con todos los pasos en ✓.
@@ -30,7 +30,7 @@ REGLAS
 
 PASOS
 
-1. GitHub. Comprueba que veo aie-online-tb/equipo-montes, bootcamp_AI_Engineering_10_26, material_bootcamp_AI_Engineering y workouts_AIE_permanente. Si falta alguno, dime que conecte GitHub en https://claude.ai/connect-github y que instale la app de Claude en la organización (o que se lo pida a un owner).
+1. GitHub. Comprueba que veo aie-online-tb/equipo-montes, bootcamp_AI_Engineering_10_26, material_bootcamp_AI_Engineering. Si falta alguno, dime que conecte GitHub en https://claude.ai/connect-github y que instale la app de Claude en la organización (o que se lo pida a un owner).
 
 2. Entender el sistema. Lee, de la rama main de equipo-montes: CLAUDE.md, setup/README.md, docs/guia-inicio.md, docs/mapa-recursos.md, docs/li-por-modulo.md y rutinas/README.md. Resúmeme en cinco líneas qué es el sistema y qué rol tengo esta semana (LI o TA).
 

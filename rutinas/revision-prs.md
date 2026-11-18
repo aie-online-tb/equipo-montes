@@ -10,7 +10,7 @@ Una PR cuenta si cumple todo esto:
 
 - está abierta y no es borrador;
 - su base es `main`;
-- está en uno de estos repos de `aie-online-tb`: `equipo-montes`, `bootcamp_AI_Engineering_10_26`, `material_bootcamp_AI_Engineering` o `workouts_AIE_permanente`;
+- está en uno de estos repos de `aie-online-tb`: `equipo-montes`, `bootcamp_AI_Engineering_10_26`, o `material_bootcamp_AI_Engineering`;
 - no la ha abierto la persona. Los usuarios de GitHub de cada uno están en `docs/mapa-recursos.md`. Las PRs que abre Claude desde la cuenta de alguien cuentan como de esa persona;
 - la persona no la ha aprobado ya después del último commit.
 
