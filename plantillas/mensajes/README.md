@@ -4,7 +4,7 @@ Una plantilla por tipo de mensaje a los alumnos de OCT26, en el canal `ia_engine
 
 | Tipo | Fichero | Cuándo | Quién |
 | --- | --- | --- | --- |
-| Apertura de sprint | [apertura-sprint.md](apertura-sprint.md) | Miércoles, al liberar | TA |
+| Apertura de sprint | [apertura-sprint.md](apertura-sprint.md) | Jueves, a primera hora | TA |
 | Aviso de clase | [aviso-clase.md](aviso-clase.md) | El día de cada clase | TA |
 | Cierre de semana | [cierre-semana.md](cierre-semana.md) | Viernes | TA |
 | Proyectos: enunciado, recordatorio y presentación | [proyectos.md](proyectos.md) | Según el calendario de TC y PB | TA |

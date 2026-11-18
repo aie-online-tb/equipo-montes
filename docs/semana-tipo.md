@@ -8,8 +8,8 @@ La semana va de **miércoles a martes**, que es el ciclo del sprint. N es el spr
 
 | Día | TA | LI |
 | --- | --- | --- |
-| Miércoles | Mergea la PR de release y libera el sprint N lo antes posible, hacia las 13:00, con su sección del campus visible. Mensaje de apertura y aviso de clase. Comprueba la grabación del martes. 19:00 acompaña a Álex Cárabe y presenta el enunciado si toca | Sin clase |
-| Jueves | Comprueba grabación y acta del miércoles. Aviso de clase. 19:00 acompaña | 19:00 LR teórica de N |
+| Miércoles | Mergea la PR de release y libera el sprint N lo antes posible, hacia las 13:00, con su sección del campus visible. Aviso de clase. Comprueba la grabación del martes. 19:00 acompaña a Álex Cárabe y presenta el enunciado si toca | Sin clase |
+| Jueves | A primera hora, mensaje de apertura del sprint N (con la automatización de Soraya). Comprueba grabación y acta del miércoles. Aviso de clase. 19:00 acompaña | 19:00 LR teórica de N |
 | Viernes | Comprueba la grabación del jueves. Mensaje de cierre de semana. Confirma con Cárabe qué da el miércoles siguiente | Nada fijo |
 | Lunes | 16:00 weekly. Aviso de clase. 19:00 acompaña | 16:00 weekly. 19:00 sesión de dudas de N-1 |
 | Martes | Comprueba la grabación del lunes. Aviso de clase. 19:00 acompaña y, mientras el LI imparte, abre la PR de release de N+1 | 19:00 LR práctica de N |

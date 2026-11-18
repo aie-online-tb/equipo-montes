@@ -29,8 +29,8 @@ El detalle de las 29 funciones está en [roles-y-funciones.md](roles-y-funciones
 
 | Día | Qué pasa |
 | --- | --- |
-| Miércoles | El TA libera el sprint hacia las 13:00 y publica el mensaje de apertura. A las 19:00 acompaña a Álex Cárabe |
-| Jueves | LR teórica (LI). El TA acompaña |
+| Miércoles | El TA libera el sprint hacia las 13:00. A las 19:00 acompaña a Álex Cárabe |
+| Jueves | A primera hora, el TA publica el mensaje de apertura. LR teórica (LI). El TA acompaña |
 | Viernes | El TA comprueba grabaciones y publica el mensaje de cierre de semana |
 | Lunes | Weekly a las 16:00. Sesión de dudas del sprint anterior a las 19:00 |
 | Martes | LR práctica (LI). Durante la clase, el TA abre la PR de release del sprint siguiente |
