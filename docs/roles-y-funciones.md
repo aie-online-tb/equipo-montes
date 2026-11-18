@@ -28,7 +28,7 @@ Los roles rotan por módulo. Quién es LI en cada módulo está en [li-por-modul
 | 8 | Preparar el caso práctico: reparto de ejercicios y notebooks | LI del sprint | El sprint |
 | 9 | Kahoot: reciclar o crear, solo si hace falta | LI del sprint | El sprint |
 | 10 | PDF de enlaces para profundizar | LI del sprint | El sprint |
-| 11 | Revisar el sprint antes de liberarlo y aplicar las correcciones al repo | LI del sprint | El sprint |
+| 11 | Revisar el sprint antes de liberarlo y aplicar las correcciones al repo. Incluye conseguir el enlace del campus del sprint para el mensaje de apertura | LI del sprint | El sprint |
 | 12 | Revisar Deck de N+1 el viernes anterior y avisar a María si hay cambios | TA | La semana |
 | 13 | Mantenimiento del material: versionar, corregir y generar extras | Los dos | Backlog |
 | 14 | Liberar el sprint: PR de release y soluciones del sprint anterior | TA | La semana |
