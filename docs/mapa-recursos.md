@@ -47,7 +47,6 @@ Cada uno conecta un solo espacio de Slack a su Claude. El de alumnos no es visib
 | `equipo-montes` | Este repo: organización y herramientas |
 | `material_bootcamp_AI_Engineering` | Material fuente, privado |
 | `bootcamp_AI_Engineering_10_26` | Repo de alumnos de OCT26 |
-| `workouts_AIE_permanente` | Workouts enlazados desde el campus |
 
 Usuarios de GitHub: Hugo es `hug4470` y Soraya es `somm14`. Las PRs que abre Claude desde la cuenta de alguien salen con su usuario.
 
