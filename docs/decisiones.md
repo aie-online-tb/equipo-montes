@@ -4,6 +4,7 @@ Una línea por decisión, la más reciente arriba. Si una decisión cambia, no s
 
 | Fecha | Decisión | Quién |
 | --- | --- | --- |
+| 18/11/2026 | El mensaje de apertura de sprint se envía los jueves a primera hora, con una automatización de Soraya, en vez del miércoles al liberar. Pendiente: Soraya comparte la automatización en este repo y avisa a Hugo (tarjeta de Trello). Hasta entonces, `rutinas/maestra.md` y `rutinas/diaria.md` siguen con el borrador del miércoles y habrá que ajustarlos | Hugo |
 | 18/11/2026 | Se retiran de la cuenta de Hugo las rutinas de prueba (Diaria y Maestra de ensayo y Seguimientos pospuestos, que usaba Notion). Siguen activas Maestra, Diaria y PRs. Soraya no tiene que replicar nada, solo montar las suyas con `setup/prompt-inicial.md` | Hugo |
 | 17/11/2026 | Tutorías: las atiende quien imparte el módulo correspondiente | Hugo y Soraya |
 | 17/11/2026 | Este repo lo mantienen los dos | Hugo y Soraya |
