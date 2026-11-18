@@ -26,6 +26,7 @@ Repo de organización y herramientas de Soraya Malpica y Hugo Menéndez, equipo 
 - Si una rama con un uso ya registrado va a sustituirse por otra con otro nombre, avisa y pide confirmación a una persona antes de hacerlo.
 - Commits y PR pequeños.
 - Trello es la fuente de verdad de las tareas. No cambies nada en Trello, Slack ni el calendario sin que una persona lo apruebe.
+- Simetría Soraya/Hugo: cuando cambies algo de entorno, cuenta, permisos o conectores, o fijes un criterio que solo viva en el chat o en la memoria, comprueba con `git grep` si queda registrado aquí. Si no, dilo en ese mismo mensaje y propón dónde registrarlo (`setup/` o `docs/decisiones.md`), sin valores secretos.
 - Cada pieza nueva del sistema nace de una spec en `specs/`. Lee `specs/README.md` antes de proponer una.
 
 ## Redacción

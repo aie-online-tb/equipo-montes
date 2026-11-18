@@ -4,6 +4,10 @@ Todo lo que hay que hacer después de clonar el repo para dejar el sistema funci
 
 Si algo de esta carpeta no funciona como dice, se corrige aquí por PR: es la única fuente de los pasos.
 
+## Atajo: que lo haga Claude
+
+Pega [prompt-inicial.md](prompt-inicial.md) en el chat del coordinador del proyecto en Claude desktop. Claude hace los pasos de abajo por ti, te pide solo lo que no puede hacer y no termina hasta que todo está verificado. Si prefieres hacerlo a mano, sigue la tabla.
+
 ## Antes de empezar
 
 - Acceso al repo `aie-online-tb/equipo-montes` en GitHub.
@@ -18,9 +22,10 @@ Si algo de esta carpeta no funciona como dice, se corrige aquí por PR: es la ú
 | 3 | Comprobar la instalación | `bash setup/comprobar.sh` | Cada uno |
 | 4 | Activar los conectores | En claude.ai, Ajustes → Conectores: los de la tabla de [mapa-recursos.md](../docs/mapa-recursos.md#conectores) | Cada uno |
 | 5 | Comprobar los conectores | Abre Claude Code en la carpeta del repo y pega [prompts/comprobar-conectores.md](prompts/comprobar-conectores.md) | Cada uno |
-| 6 | Activar las rutinas | Sigue [prompts/activar-rutinas.md](prompts/activar-rutinas.md) | Cada uno su diaria; la maestra, solo Hugo |
+| 6 | Activar las rutinas | Sigue [prompts/activar-rutinas.md](prompts/activar-rutinas.md) | Cada uno su diaria y su rutina de PRs; la maestra, solo Hugo |
 | 7 | Primera prueba | En Claude Code: «¿quién libera el sprint esta semana y cuándo?» | Cada uno |
 | 8 | Activar la revisión de Claude en GitHub | Sigue [revision-claude.md](revision-claude.md) | Solo Hugo, una vez |
+| 9 | Permitir los hosts de Gemini y guardar tu clave como secreto de red (para revisar sprints) | Sigue [entorno-red-y-secretos.md](entorno-red-y-secretos.md) | Cada uno |
 
 Los pasos 2 y 3 se pueden repetir sin miedo: si algo ya está hecho, lo dejan como está.
 
