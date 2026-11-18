@@ -4,6 +4,7 @@ Una línea por decisión, la más reciente arriba. Si una decisión cambia, no s
 
 | Fecha | Decisión | Quién |
 | --- | --- | --- |
+| 18/11/2026 | Se retiran de la cuenta de Hugo las rutinas de prueba (Diaria y Maestra de ensayo y Seguimientos pospuestos, que usaba Notion). Siguen activas Maestra, Diaria y PRs. Soraya no tiene que replicar nada, solo montar las suyas con `setup/prompt-inicial.md` | Hugo |
 | 17/11/2026 | Tutorías: las atiende quien imparte el módulo correspondiente | Hugo y Soraya |
 | 17/11/2026 | Este repo lo mantienen los dos | Hugo y Soraya |
 | 17/11/2026 | Calendario del S08: apertura el 14/12, práctica el 15/12 y sesión de dudas de S06, S07 y S08 el 17/12, para que el S07 no se quede solo con teórica por el puente. Las fechas exactas se confirman en el calendario | Hugo y Soraya |
