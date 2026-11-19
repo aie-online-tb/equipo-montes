@@ -4,6 +4,10 @@ Una línea por decisión, la más reciente arriba. Si una decisión cambia, no s
 
 | Fecha | Decisión | Quién |
 | --- | --- | --- |
+| 19/11/2026 | Se retiran las rutinas de prueba del 17/11 (Diaria y Maestra de ensayo y Seguimientos pospuestos) | Hugo |
+| 19/11/2026 | Los repos de alumnos y el de material no llevan `CLAUDE.md`, porque no se pueden subir a GitHub. Sus reglas viven aquí (`docs/reglas-git.md` y el `CLAUDE.md` de este repo) | Hugo |
+| 19/11/2026 | El repo `workouts_AIE_permanente` queda congelado: no se actualiza nunca ni se copian a él los workouts de ningún sprint | Hugo |
+| 19/11/2026 | En OCT26 el sprint se libera el JUEVES, con la PR de release el miércoles por la noche. Sustituye a la decisión del 16/11 (miércoles). Pendiente de ajustar `semana-tipo`, `roles-y-funciones`, `li-por-modulo`, `guia-inicio`, `rutinas/` y las skills de preparar y liberar sprint, que aún dicen miércoles. El S05 se liberó en miércoles (18/11) como transición | Hugo |
 | 18/11/2026 | El mensaje de apertura de sprint se envía los jueves a primera hora, con una automatización de Soraya, en vez del miércoles al liberar. Pendiente: Soraya comparte la automatización en este repo y avisa a Hugo (tarjeta de Trello). Hasta entonces, `rutinas/maestra.md` y `rutinas/diaria.md` siguen con el borrador del miércoles y habrá que ajustarlos | Hugo |
 | 18/11/2026 | Se retiran de la cuenta de Hugo las rutinas de prueba (Diaria y Maestra de ensayo y Seguimientos pospuestos, que usaba Notion). Siguen activas Maestra, Diaria y PRs. Soraya no tiene que replicar nada, solo montar las suyas con `setup/prompt-inicial.md` | Hugo |
 | 17/11/2026 | Tutorías: las atiende quien imparte el módulo correspondiente | Hugo y Soraya |
@@ -31,13 +35,14 @@ Una línea por decisión, la más reciente arriba. Si una decisión cambia, no s
 | 16/11/2026 | La automatización de grabaciones se queda en el equipo de Hugo; el TA comprueba la subida | Hugo |
 | 16/11/2026 | La hoja de ruta de estandarización del repo material queda obsoleta y se absorbe aquí a menor escala | Hugo |
 | 16/11/2026 | Se abandona la tarea programada Diaria; si hace falta se diseñará otra | Hugo |
-| 16/11/2026 | En OCT26 el sprint se libera el miércoles, para que el alumno lo vea antes de la teórica del jueves | Hugo |
+| 16/11/2026 | En OCT26 el sprint se libera el miércoles, para que el alumno lo vea antes de la teórica del jueves (sustituida el 19/11/2026: ahora el jueves) | Hugo |
 
 ## Abiertas
 
 - LI de M06 MLOps.
 - Proteger `main`: Hugo mira qué permite el plan gratuito de GitHub en repos privados; si no, Soraya busca el script que ya usó con alumnos.
-- Reflejar el cambio del S08 en el calendario OCT26 y en `li-por-modulo.md`: hoy el calendario sigue con la teórica del S08 el 10/12.
+- Reflejar el cambio del S08 en `li-por-modulo.md`. El calendario OCT26 ya está actualizado (banners S07: 03–13/12 y S08: 14–16/12, teórica S08 el 14/12). Queda por decidir, la semana anterior, si el S08 se libera el 10/12 o el 14/12.
+- Ajustar a «jueves» los docs, rutinas y skills que aún dicen miércoles.
 - Tutorías: formato y horarios.
 - Estandarizar `chore:` y el resto de prefijos (Claude propone).
 - Estandarización de estilo y formato (spec 006).
