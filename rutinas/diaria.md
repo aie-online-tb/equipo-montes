@@ -12,7 +12,7 @@ Conectores: GitHub (este repo y los del bootcamp, lectura), Google Calendar, Tre
 
 1. Fecha de hoy en Europe/Madrid.
 2. Lee `docs/li-por-modulo.md`, `docs/semana-tipo.md` y `docs/roles-y-funciones.md` de este repo, en `main`.
-3. Saca N del calendario OCT26. Los banners de sprint van de jueves a miércoles, pero nuestra semana va de miércoles a martes. Por eso N no es el banner de hoy, sino el banner que contiene el jueves de esta semana: mañana si hoy es miércoles, o el jueves pasado en los demás días. Ejemplo: el miércoles 18/11/2026 el banner de hoy es S04, pero N es S05.
+3. Saca N del calendario OCT26. Nuestra semana va de jueves a miércoles, igual que los banners de sprint, así que N es el banner que contiene hoy. Ejemplo: el jueves 19/11/2026 N es S05. Si hoy no cae en ningún banner (vacaciones o fuera de los sprints), no hay N: dilo.
 4. Averigua el rol de la persona esta semana (LI o TA) y si va a impartir N+1, porque las funciones que siguen al sprint se preparan una semana antes.
 5. Si hoy no hay clases (festivo, vacaciones o Project Break), dilo en una línea y da solo lo de los apartados 3, 4 y 5.
 
@@ -25,8 +25,9 @@ Según el día, añade:
 | Día | Qué añadir |
 | --- | --- |
 | Lunes | Alumnos sin actividad en 7 días o más, de la pestaña «Seguimientos» de la hoja de seguimiento, sin los que estén en «Seg. PAUSADO». Solo nombre y días. Y la lista de tarjetas abiertas para la weekly de las 16:00 |
-| Martes | Al TA: la copia de N+1 al repo de alumnos durante la clase de las 19:00, con la skill `liberar-sprint`. A quien imparte N+1: la revisión vence hoy a las 19:00 |
-| Miércoles | Al TA: liberar hacia las 13:00. Si la maestra ha dejado el borrador de apertura, el enlace a la tarjeta |
+| Martes | A quien imparte N+1: la revisión vence hoy a las 19:00 |
+| Miércoles | Al TA: al terminar la clase de las 19:00, copia de N+1 al repo de alumnos y PR de release abierta, con la skill `liberar-sprint`. A quien imparte N+1: la teórica vence hoy |
+| Jueves | Al TA: liberar a primera hora, mergeando la PR de release que quedó abierta. Si la maestra ha dejado el borrador de apertura, el enlace a la tarjeta |
 | Viernes | Al TA: el enlace a la tarjeta con el borrador del cierre de semana, para revisar y publicar |
 
 ## 3. PRs por revisar

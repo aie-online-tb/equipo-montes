@@ -9,7 +9,7 @@ Las tres primeras skills comunes del plugin `aie-equipo`, una por cada función 
 | Skill | Para quién | Función |
 | --- | --- | --- |
 | `preparar-sprint` | Quien vaya a impartir el sprint | Revisar el sprint, preparar la teórica y el caso práctico y hacer el PDF de enlaces (funciones 7, 8, 10 y 11) |
-| `liberar-sprint` | TA | Abrir la PR de release el martes, liberar el miércoles y dejar el campus listo (funciones 14 y 15) |
+| `liberar-sprint` | TA | Abrir la PR de release el miércoles por la noche, liberar el jueves y dejar el campus listo (funciones 14 y 15) |
 | `acta-sesion` | TA | Generar el acta de una sesión a partir de su transcripción (función 20) |
 
 ## Por qué
@@ -20,7 +20,7 @@ Cada uno ya tiene su versión: Soraya, el prompt maestro para preparar sprints y
 
 Dentro:
 - `preparar-sprint`: parte del prompt maestro v2 de Soraya (`incubadora/soraya/preparar-sprint/`), con sus fases y sus reglas. Sus plantillas pasan a `plantillas/`.
-- `liberar-sprint`: parte de la skill personal de Hugo para el cambio de sprint, adaptada a OCT26 (PR el martes, liberación el miércoles hacia las 13:00).
+- `liberar-sprint`: parte de la skill personal de Hugo para el cambio de sprint, adaptada a OCT26 (PR el miércoles por la noche, liberación el jueves a primera hora).
 - `acta-sesion`: parte de la skill de actas de Soraya, que ya usa la automatización de grabaciones.
 - Cada skill dice al empezar qué necesita (repo, sprint, ordenador conectado) y para si falta algo.
 
