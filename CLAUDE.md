@@ -10,7 +10,7 @@ Repo de organización y herramientas de Soraya Malpica y Hugo Menéndez, equipo 
 - Dos roles que rotan por módulo: **LI** imparte las Live Reviews de la semana; **TA** acompaña todas las clases y lleva la operación de la semana.
 - Hay funciones que siguen a la semana (LI o TA de esa semana) y funciones que siguen al sprint (quien lo imparte).
 - Antes de responder sobre quién hace qué o cuándo, consulta `docs/roles-y-funciones.md`, `docs/semana-tipo.md`, `docs/li-por-modulo.md`, `docs/mapa-recursos.md` y `docs/guia-inicio.md`.
-- En OCT26 el sprint se libera el JUEVES (PR el miércoles por la noche). Es la regla vigente (ver `docs/decisiones.md`); los docs que aún digan miércoles están pendientes de ajuste.
+- En OCT26 el sprint se libera el JUEVES (PR el miércoles por la noche). Es la regla vigente (ver `docs/decisiones.md`) y la semana tipo va de jueves a miércoles.
 - Notion ya no se usa. Trello es la fuente de verdad de las tareas.
 
 ## Git y PR (detalle en `docs/reglas-git.md`)

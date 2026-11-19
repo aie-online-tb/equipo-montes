@@ -25,15 +25,15 @@ Hay un matiz importante. Unas funciones **siguen a la semana** y otras **siguen 
 
 El detalle de las 29 funciones está en [roles-y-funciones.md](roles-y-funciones.md).
 
-### La semana, de miércoles a martes
+### La semana, de jueves a miércoles
 
 | Día | Qué pasa |
 | --- | --- |
-| Miércoles | El TA libera el sprint hacia las 13:00. A las 19:00 acompaña a Álex Cárabe |
-| Jueves | A primera hora, el TA publica el mensaje de apertura. LR teórica (LI). El TA acompaña |
+| Jueves | A primera hora, el TA libera el sprint y publica el mensaje de apertura. LR teórica (LI). El TA acompaña |
 | Viernes | El TA comprueba grabaciones y publica el mensaje de cierre de semana |
 | Lunes | Weekly a las 16:00. Sesión de dudas del sprint anterior a las 19:00 |
-| Martes | LR práctica (LI). Durante la clase, el TA abre la PR de release del sprint siguiente |
+| Martes | LR práctica (LI). El TA acompaña |
+| Miércoles | A las 19:00 el TA acompaña a Álex Cárabe. Al terminar, abre la PR de release del sprint siguiente, que se mergea el jueves |
 
 Los plazos de preparación están en [semana-tipo.md](semana-tipo.md).
 
@@ -41,9 +41,9 @@ Los plazos de preparación están en [semana-tipo.md](semana-tipo.md).
 
 | Módulo | Sprints | LI |
 | --- | --- | --- |
-| M02 y M03 | S05, S06 y S07 | Hugo, desde el miércoles 18/11 |
-| M04 RAG | S08, S09 y S10 | Soraya, desde el miércoles 09/12 |
-| M05 Agents | S11, S12 y S13 | Hugo, desde el 03/02/2027 |
+| M02 y M03 | S05, S06 y S07 | Hugo, desde el jueves 19/11 |
+| M04 RAG | S08, S09 y S10 | Soraya, desde la apertura del S08 (10/12 o 14/12, por decidir) |
+| M05 Agents | S11, S12 y S13 | Hugo, desde el 04/02/2027 |
 | M06 MLOps | S14, S15 y S16 | Sin asignar |
 
 La fuente es el calendario OCT26 de Google. El detalle y los relevos están en [li-por-modulo.md](li-por-modulo.md).

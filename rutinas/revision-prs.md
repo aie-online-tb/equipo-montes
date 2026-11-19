@@ -19,7 +19,7 @@ Una PR cuenta si cumple todo esto:
 Una línea: repo, número y título con enlace, autor, cuánto lleva abierta y el estado de los checks (verde, rojo o en curso).
 
 Va primero si es urgente:
-- es la PR de `develop` a `main` del repo de alumnos y hoy es miércoles antes de las 13:00, porque es la liberación;
+- es la PR de `develop` a `main` del repo de alumnos y hoy es jueves por la mañana, porque es la liberación;
 - lleva más de 24 horas abierta;
 - tiene los checks en rojo, porque entonces no se debe mergear y hay que avisar a su autor.
 

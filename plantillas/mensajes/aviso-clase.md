@@ -25,7 +25,7 @@ Cualquier duda, por aquí. ¡Nos vemos! 🙌
 | Miércoles | Taller | El tema y la dinámica: parte de demo y parte de práctica. No es obligatorio ni se puntúa |
 | Miércoles | Microcredencial UAM | El título de la sesión y el ponente |
 | Miércoles | Masterclass externa | El título y el ponente |
-| Jueves | LR teórica | Los bloques del sprint {N} que se presentan, y que antes conviene mirar el sprint, que se liberó el miércoles |
+| Jueves | LR teórica | Los bloques del sprint {N} que se presentan, y que antes conviene mirar el sprint, que se ha liberado esta mañana |
 
 Si ese día hay una entrega o un enunciado de TC o PB, se usa [proyectos.md](proyectos.md).
 

@@ -1,6 +1,6 @@
 ---
 name: liberar-sprint
-description: Libera un sprint del bootcamp AI Engineering de The Bridge en el intake OCT26. Antes de copiar nada comprueba que el sprint nuevo está revisado con preparar-sprint; el martes prepara la release (soluciones del sprint que cierra y sprint nuevo sin soluciones) y el miércoles comprueba la liberación y deja el campus listo. Úsala cuando el TA diga «liberar el sprint», «preparar la release», «cambio de sprint», «abre el siguiente sprint» o «deja el campus listo».
+description: Libera un sprint del bootcamp AI Engineering de The Bridge en el intake OCT26. Antes de copiar nada comprueba que el sprint nuevo está revisado con preparar-sprint; el miércoles por la noche prepara la release (soluciones del sprint que cierra y sprint nuevo sin soluciones) y el jueves a primera hora comprueba la liberación y deja el campus listo. Úsala cuando el TA diga «liberar el sprint», «preparar la release», «cambio de sprint», «abre el siguiente sprint» o «deja el campus listo».
 ---
 
 # liberar-sprint
@@ -11,8 +11,8 @@ Funciones 14 (liberar el sprint) y 15 (campus) del TA. Basada en la skill person
 
 | Día | Qué | Quién |
 | --- | --- | --- |
-| Martes, desde las 19:00 | Puerta de revisión y pasos 0 a 2: dejar la release preparada y abrir la PR mientras el LI da la práctica | TA |
-| Miércoles, hacia las 13:00 | Paso 3 y 4: mergear la release, mostrar la sección del campus y comprobar enlaces | TA |
+| Miércoles, al terminar la clase de las 19:00 | Puerta de revisión y pasos 0 a 2: dejar la release preparada y abrir la PR | TA |
+| Jueves, a primera hora | Paso 3 y 4: mergear la release, mostrar la sección del campus y comprobar enlaces | TA |
 
 N es el sprint que cierra y N+1 el que se libera. Si entre los dos hay un Project Break, para y pregunta qué se libera.
 
@@ -22,7 +22,7 @@ En OCT26 el contenido no entra en una sola release semanal. Cada pieza es una co
 
 | Pieza | Cuándo suele entrar |
 | --- | --- |
-| Sprint N+1 sin soluciones | Martes o miércoles, antes de liberar |
+| Sprint N+1 sin soluciones | Miércoles, antes de liberar |
 | Soluciones del sprint anterior | Después de su práctica del martes |
 | Slides del jueves y otros añadidos (talleres) | Cuando estén listos |
 
@@ -77,9 +77,9 @@ En la misma rama, copia el sprint N+1 con la misma ruta de módulo que en materi
 
 Al terminar los pasos 1 y 2, enseña qué hay en stage y **espera el OK** antes de hacer commit, push o abrir PR. Con el OK, el orden es:
 1. PR de `feature/copy_from_material` a `develop`.
-2. PR de `develop` a `main`, «release: …» si es el sprint nuevo o «feat: …» si son soluciones o slides. Si es el sprint nuevo, se deja abierta hasta la hora de liberar del miércoles.
+2. PR de `develop` a `main`, «release: …» si es el sprint nuevo o «feat: …» si son soluciones o slides. Si es el sprint nuevo, se deja abierta hasta la hora de liberar del jueves.
 
-### Paso 3 · Miércoles: liberar
+### Paso 3 · Jueves: liberar
 
 - La PR a `main` la mergea el TA, nunca Claude. Comprueba después que el sprint N+1 está en `main` y que no hay `_SOLUTION` de N+1 ni `README_profes.md`.
 - Campus: en la sección del sprint N+1, comprueba que cada «Fundamentos técnicos y ejemplos» apunta a `blob/main/<Modulo>/Sprint_XX/01_Teoria/NN_Bloque/README.md`, o a la carpeta si el bloque no tiene README, igual que el sprint anterior. El curso de OCT26 está en `docs/mapa-recursos.md` del repo `equipo-montes`.

@@ -28,21 +28,21 @@ Igual que el apartado 1 de [diaria.md](diaria.md): fecha, sprint N de esta seman
 
 ## 2. Tarjetas de la semana
 
-Cada día comprueba que existen las tarjetas de la semana y crea las que falten. El miércoles las crea todas; el resto de días solo repone las que falten.
+Cada día comprueba que existen las tarjetas de la semana y crea las que falten. El jueves, primer día de la semana, las crea todas; el resto de días solo repone las que falten.
 
 Todas van en la lista «Current Sprint» del tablero `iYb6W4J7`. El nombre empieza siempre por `[OCT26 S{NN}]`, para poder buscarlas. Las horas están en Europe/Madrid y se convierten a UTC al guardarlas.
 
 | Tarjeta | Para | Vence |
 | --- | --- | --- |
-| `[OCT26 S{N}] Liberar el sprint y mensaje de apertura` | TA | Miércoles, 13:00 |
+| `[OCT26 S{N}] Liberar el sprint y mensaje de apertura` | TA | Jueves, 9:00 |
 | `[OCT26 S{N}] Caso práctico` | LI | Lunes, 19:00 |
 | `[OCT26 S{N}] PDF de enlaces para profundizar` | LI | Martes, 19:00 |
 | `[OCT26 S{N}] Mensaje de cierre de semana` | TA | Viernes, 14:00 |
 | `[OCT26 S{N+1}] Revisar el sprint y aplicar correcciones` | Quien imparte N+1 | Martes, 19:00 |
 | `[OCT26 S{N+1}] Revisar Deck` | TA | Viernes, 12:00 |
-| `[OCT26 S{N+1}] Sección del campus preparada y oculta` | TA | Martes, 19:00 |
-| `[OCT26 S{N+1}] Copia al repo de alumnos` | TA | Martes, 21:00 |
-| `[OCT26 S{N+1}] Preparar la teórica` | Quien imparte N+1 | Miércoles siguiente, 19:00 |
+| `[OCT26 S{N+1}] Sección del campus preparada y oculta` | TA | Miércoles, 19:00 |
+| `[OCT26 S{N+1}] Copia al repo de alumnos` | TA | Miércoles, 21:00 |
+| `[OCT26 S{N+1}] Preparar la teórica` | Quien imparte N+1 | Miércoles, 19:00 |
 
 Si esta semana hay enunciado, entrega o presentación de un TC o un PB según el calendario, añade una tarjeta para cada uno, para el TA y con la fecha del calendario.
 
@@ -54,7 +54,7 @@ La descripción de cada tarjeta lleva en dos o tres líneas qué hay que hacer, 
 
 ## 3. Limpieza de Done
 
-Los miércoles cuenta las tarjetas de la lista «Done 🎉» que siguen sin archivar y llevan más de 14 días sin movimiento.
+Los jueves cuenta las tarjetas de la lista «Done 🎉» que siguen sin archivar y llevan más de 14 días sin movimiento.
 
 - Si hay alguna, crea la tarjeta `[Trello] ¿Archivar N tarjetas de Done? · semana del {dd/mm}` en «Current Sprint». La asigna a Hugo y vence el viernes a las 14:00. En la descripción van la lista de tarjetas, con su nombre y su enlace, y la pregunta: «Comenta OK en esta tarjeta para archivarlas todas, o OK menos los números que quieras conservar».
 - Cada día mira si esa tarjeta tiene un comentario de Hugo con «OK». Si lo tiene, archiva las tarjetas de la lista menos las que el comentario excluya, deja un comentario con lo que ha archivado y marca la tarjeta como hecha. El comentario de Hugo es su OK; sin él no archiva nada.
@@ -66,8 +66,8 @@ Cada resultado va como comentario en su tarjeta. El comentario empieza por `Ruti
 
 | Día | Qué hace | Tarjeta |
 | --- | --- | --- |
-| Martes y miércoles | Mira en `bootcamp_AI_Engineering_10_26` las PRs abiertas de `feature/copy_from_material` a `develop` y de `develop` a `main`. Avisa de cuatro cosas: soluciones de N+1 (ficheros `*_SOLUTION*` o carpetas `SOLUTION/`), `README_profes.md`, duplicados « 2» y una PR a `main` que no venga de `develop`. El martes, avisa también si a las 8:00 el sprint N+1 aún no está en `feature/copy_from_material` ni en `develop` | Copia al repo de alumnos |
-| Miércoles | Borrador del mensaje de apertura con `plantillas/mensajes/apertura-sprint.md`. Lo redacta desde el `README.md` del sprint N en material, porque a las 8:00 aún no está liberado. Los enlaces apuntan a la ruta que tendrá en `main` del repo de alumnos. En el comentario recuerda comprobarlos después de liberar | Liberar el sprint y mensaje de apertura |
+| Miércoles y jueves | Mira en `bootcamp_AI_Engineering_10_26` las PRs abiertas de `feature/copy_from_material` a `develop` y de `develop` a `main`. Avisa de cuatro cosas: soluciones de N+1 (ficheros `*_SOLUTION*` o carpetas `SOLUTION/`), `README_profes.md`, duplicados « 2» y una PR a `main` que no venga de `develop`. El jueves, avisa también si a las 8:00 el sprint N no está en `develop` ni en una PR abierta a `main`, porque no podrá liberarse a primera hora | Copia al repo de alumnos |
+| Jueves | Borrador del mensaje de apertura con `plantillas/mensajes/apertura-sprint.md`. Lo redacta desde el `README.md` del sprint N en material, porque a las 8:00 aún no está liberado. Los enlaces apuntan a la ruta que tendrá en `main` del repo de alumnos. En el comentario recuerda comprobarlos después de liberar | Liberar el sprint y mensaje de apertura |
 | Viernes | Borrador del cierre de semana con `plantillas/mensajes/cierre-semana.md` | Mensaje de cierre de semana |
 
 Los borradores siguen la skill `normas-aie`. No llevan datos de alumnos.
