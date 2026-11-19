@@ -1,6 +1,6 @@
 # Apertura de sprint
 
-Cuándo: miércoles, en cuanto el sprint está liberado en el repo y visible en el campus. Quién: TA.
+Cuándo: jueves a primera hora (decidido el 18/11/2026), con el sprint ya liberado en el repo y visible en el campus. Quién: TA, con la automatización de Soraya cuando esté compartida.
 
 ## Plantilla
 

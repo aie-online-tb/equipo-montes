@@ -25,7 +25,7 @@ En tu cuenta de Claude, crea una tarea programada (rutina) con:
 | Entorno | El tuyo | El tuyo | El que tiene el secreto de Trello |
 | Modelo | Uno ligero | Uno ligero | Uno ligero |
 
-Todos los horarios en Europe/Madrid. Los repos del bootcamp son `bootcamp_AI_Engineering_10_26`, `material_bootcamp_AI_Engineering` y `workouts_AIE_permanente`.
+Todos los horarios en Europe/Madrid. Los repos del bootcamp son `bootcamp_AI_Engineering_10_26` y `material_bootcamp_AI_Engineering`.
 
 ## 2. Texto de la rutina
 
